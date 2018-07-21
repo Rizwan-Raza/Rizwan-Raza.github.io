@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My jQuery Web Pege</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript">
+		$(document).ready(function(){
+		    $("#myBtn").click(function(){
+		        $("#myModal").animate({left: '100%'});
+		        $("#myModal").modal('show');
+		        $("#myModal").animate({left: '0'},1000);
+		    });
+		    $("#closeBtn").click(function(){
+		        $("#myModal").animate({left: '100%'},1000);
+		        setTimeout(function() {$("#myModal").modal('hide')},1000);
+		    });
+		    $("#sbmtBtn").click(function(){
+		        $("#myModal").animate({left: '100%'},1000);
+		        setTimeout(function() {$("#myModal").modal('hide')},1000);
+		    });
+		});
+	</script>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li> 
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#" id="myBtn"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog" tabindex="-1">
+    <div class="modal-dialog">
+
+		<!-- Modal content-->
+		<div class="modal-content" style="width: 80%;">
+	        <div class="modal-header" style="padding:35px 50px;">
+				<h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
+			</div>
+	        <div class="modal-body" style="padding:40px 50px;">
+				<form role="form">
+					<div class="form-group">
+						<label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+						<input type="text" class="form-control" id="usrname" placeholder="Enter email">
+		            </div>
+		            <div class="form-group">
+						<label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+						<input type="text" class="form-control" id="psw" placeholder="Enter password">
+		            </div>
+		            <div class="checkbox">
+						<label><input type="checkbox" value="" checked>Remember me</label>
+		            </div>
+				</form>
+	        </div>
+	        <div class="modal-footer">
+				<p class="pull-left">Not a member? <a href="#">Sign Up</a></p>
+				<p class="pull-right">Forgot <a href="#">Password?</a></p>
+	        </div>
+		</div>
+		<div class="modal-content" style="width: 20%;">
+	        <div class="modal-header" style="padding: 45px 35px;">
+				<button type="button" id="closeBtn" class="close text-center"><span class="glyphicon glyphicon-remove"></span> <br/><small>Close</small></button>
+			</div>
+	        <div class="modal-body" style="padding: 130px 30px;">
+				<button type="submit" id="sbmtBtn" class="close text-center"><span class="glyphicon glyphicon-ok"></span> <br/><small>Submit</small></button>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+</script>
+</body>
+</html>

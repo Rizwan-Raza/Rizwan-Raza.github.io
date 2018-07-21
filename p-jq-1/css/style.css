@@ -1,0 +1,30 @@
+#myModal {
+	position: absolute;
+	left: 100%;
+}
+.form-control , .navbar {
+	border-radius: 0px;
+}
+.modal-header {
+	height: 120px;
+}
+.modal-header, h4 {
+	background-color: #5cb85c;
+	color:white !important;
+	text-align: center;
+	font-size: 30px;
+}
+.modal-content:nth-child(2) .modal-body {
+	height: 319px;
+	background-color: #ffffff;
+}
+.modal-footer {
+	background-color: #f9f9f9;
+}
+.modal-content {
+	float: left;
+}
+.modal-content {
+	border: none;
+	border-radius: 0px;
+}
