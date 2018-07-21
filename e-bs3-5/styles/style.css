@@ -1,0 +1,54 @@
+body{
+	background-color: #eee;
+}
+h3{
+	color: #1475BA;
+	font-weight: bolder;
+}
+h5.x{
+	color: #777;
+}
+h5{
+	font-family: "segoe ui";
+	color: #1475BA;
+	letter-spacing: -1px;
+	font-weight: bold;
+}
+button.btn-default{
+	padding: 3px 24px !important;
+	border-radius: 0px;
+}
+div.dropdown>button{
+	text-align: left !important;
+	padding: 3px !important;
+	width: 240px !important;
+	border-radius: 5px;
+}
+div.dropdown>button>span{
+	text-align: right !important;
+}
+div.col-md-3>button.filter{
+	float: right;
+}
+thead{
+	background-color: #1475BA;
+	color: white;
+
+}
+table{
+	width: 100%;
+	font-size: 12px;
+	background-color: white;
+}
+tr>td,th{
+	padding: 3px !important;
+}
+.pagination{
+	float: left;
+}
+div.col-md-9>button.btn-default{
+	float: left;
+	padding: 3px !important;
+	width: 100px !important;
+	margin: 24px 10px;
+}

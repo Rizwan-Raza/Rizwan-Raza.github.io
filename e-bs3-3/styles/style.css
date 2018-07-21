@@ -1,0 +1,56 @@
+body{
+	background-color: #eee;
+}
+h3{
+	color: #1475BA;
+	font-weight: bolder;
+}
+h5{
+	font-family: "segoe ui";
+	color: #1475BA;
+	letter-spacing: -1px;
+	font-weight: bold;
+}
+input{
+	padding: 0px;
+	font-weight: bold;
+	padding: 3px;
+	font-size: 12px;
+	margin: -10px 0px 10px 0px;
+}
+button.btn-default{
+	padding: 4px 20px !important;
+	margin: 0px 5px;
+	font-size: 12px !important;
+	border-bottom: 1px solid gray;
+}
+div.col-md-6>div.row>div.col-md-12>input,div.col-md-6>div.row>div.col-md-12>button{
+	float: right;
+	margin: 5px;
+}
+thead{
+	background-color: #1475BA;
+	color: white;
+
+}
+table{
+	width: 100%;
+	font-size: 12px;
+	background-color: white;
+}
+tr>td,th{
+	padding: 3px !important;
+}
+.box{
+	width: 400px;
+	height: 160px;
+	background-color: white;
+	margin: 10px 0px;
+	border: 1px solid #aaa;
+}
+div.box>button{
+	margin: 5px -10px 5px 10px;
+	padding: 0px 5px;
+}
+div.box span{
+}

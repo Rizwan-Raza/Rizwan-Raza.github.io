@@ -1,0 +1,171 @@
+div.container{
+	font-family: "Segoe UI Semibold", sans-serif, arial, helvetica;
+	margin-top: 25px;
+	font-size: 13px;
+	color: #555;
+}
+div.row>div.col-md-9>span{
+	color: #1475BA;
+	font-size: 20px;
+}
+div.container>div.row>div.col-md-3>img{
+	float: left; 
+	padding: 60px 40px;
+	height: 260px;
+	width: 260px;
+	border: 1px solid #ddd;
+}
+div.col-md-9>div.row>div.col-md-10>p>span{
+	color:#14a256;
+	font-size: 24px;
+}
+button.btn{
+	float: right;
+	color: white;
+	background-color: #1475BA;
+	border: none;
+	width: 180px;
+	border-radius: 0px;
+	padding: 8px 25px;
+}
+div.container>div.row>div.col-md-7{
+	float: left;
+	font-family:helvetica,arial,sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	color: #333;
+}
+small{
+	font-weight: normal;
+	color: gray;
+}
+select.btn{
+	float: right;
+	margin-left: 15px;
+	border: 1px solid #ccc;
+	width: 180px;
+	border-radius: 0px;
+	padding: 7px;
+	text-align: left;
+	color: #777;
+}
+div.col-md-7,div.col-md-5{
+	line-height: 35px;
+	font-size: 14px;
+}
+div.container>div.row>div.col-md-5>button.btn{
+	margin-left: 15px;
+	float: right;
+	color: white;
+	background-color: #14a256 !important;
+}
+div.col-md-5>span{
+	float: right;
+}
+div.container>div.row>div.col-md-10>div.row>div.col-md-9>p>span{
+	font-family: helvetica,arial,sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #1475BA;
+}
+a{
+	color: #1475BA;
+}
+div.col-md-2>img.img-responsive{
+	margin: 0 auto;
+	width: 70px;
+}
+div.col-md-2>p{
+	color: #1475BA;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+}
+div>span.glyphicon-star{
+	color: #ffdb00;
+}
+div.col-md-9>div>span.glyphicon-star{
+	color: #ffdb00;
+	font-size: 18px;
+}
+.silver{
+	color: silver !important;
+}
+div.container>div.row>div.col-md-10>div.row>div.col-md-4>img{
+	padding: 5px;
+	border: 1px solid #aaa;
+}
+div.col-md-10>div.row>div.col-md-1>img{
+	height: 64px;
+	width: 64px;
+}
+div.col-md-10>div.row>div.col-md-8>span{
+	color: #333;
+	font-size: 14px;
+	font-weight: bold;
+}
+div.col-md-11>div.row>div.col-md-3,div.col-md-4,div.col-md-7>p>span,div.col-md-10>div.row>div.col-md-8{
+	color: #999;
+	font-size: 12px;
+}
+div.col-md-10>input{
+	padding: 10px 25px;
+	margin: 5px 0px;
+	width: 100%;
+}
+div.col-md-11>div.row>div.col-md-2>button.btn{
+	border: 1px solid #14a256;
+	width: 100%;
+	margin: 5px 0px;
+	padding: 10px;
+	float: right;
+	color: white;
+	background-color: #14a256 !important;
+}
+div.container>div.row>div.col-md-12>button.btn{
+	background-color: #14a256;
+	float: right;
+}
+div.container>div.row>div.col-md-12>span{
+	line-height: 35px;
+	margin-right: 10px;
+	float: right;
+	font-size: 14px;
+}
+div.container>div.row>div.col-md-12>button.center-block{
+	background-color: white;
+	border: 1px solid #14a256;
+	text-align: center;
+	color: #14a256;
+	padding: 8px;
+	font-size: 14px;
+	width: 180px;
+}
+div.container>div.row>div.col-md-12>button.center-block:hover{
+	background-color: #14a256;
+	color: white;
+}
+span>i{
+	color: white;
+	margin: 5px;
+	width: 30px;
+	padding: 5px 0px;
+	text-align: center;
+	font-size: 20px !important;
+	float: right;
+}
+span>i.fa-thumbs-up,i.fa-thumbs-down{
+	float: none;
+	color: #aaa;
+	font-size: 18px !important;
+	cursor: pointer;
+}
+span>i.fa-facebook{
+	background-color: #43609c;
+}
+span>i.fa-twitter{
+	background-color: #00aced;
+}
+span>i.fa-google-plus{
+	background-color: #dd4b39;
+}

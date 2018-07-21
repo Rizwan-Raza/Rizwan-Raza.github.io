@@ -1,0 +1,475 @@
+@font-face{
+  font-family:'TitilliumWeb-Regular';
+  src:url('../fonts/TitilliumWeb-Regular.ttf');
+}
+@font-face{
+  font-family:'TitilliumWeb-Light';
+  src:url('../fonts/TitilliumWeb-Light.ttf');
+}
+@font-face{
+  font-family:'TitilliumWeb-SemiBold';
+  src:url('../fonts/TitilliumWeb-SemiBold.ttf');
+}
+@font-face{
+  font-family:'TitilliumWeb-Italic';
+  src:url('../fonts/TitilliumWeb-Italic.ttf');
+}
+@font-face{
+  font-family:'TitilliumWeb-Bold';
+  src:url('../fonts/TitilliumWeb-Bold.ttf');
+}
+html, body {
+  font-family: 'TitilliumWeb-Regular';
+  text-align: center;
+  font-size: 16px;
+  color: #3c4761;
+  position: relative;
+}
+h1, h2, h3, h4 {
+  text-transform: uppercase;
+  font-family: 'TitilliumWeb-Bold';
+}
+section {
+  padding: 84px 0px;
+  position: relative;
+}
+section h1 {
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+hr {
+  width: 8%;
+}
+p {
+  font-size: 16px;
+  font-family: 'TitilliumWeb-Light';
+}
+.p-lg {
+  font-size: 18px;
+  font-family: 'TitilliumWeb-Regular';
+  margin-bottom: 15px;
+}
+.btn {
+  padding: 20px;
+  font-size: 18px;
+  font-family: 'TitilliumWeb-SemiBold';
+  margin-top: 50px;
+  border-width: 0px;
+  text-transform: uppercase;  
+  width: 280px;
+  box-shadow: 0 5px #999;
+  transition: all 0.1s ease;
+}
+.btn:focus, .btn:active {
+  outline: none;
+}
+.btn:active {
+  transform: translateY(3px);
+}
+.bg-violet {
+  background-color: #87509c;
+}
+.bg-cyan {
+  background-color: #17c2a4;
+}
+.bg-wet-paper {
+  background-color: #e7f1f8;
+}
+.bg-orch {
+  background-color: #ffdd99;
+}
+.bg-rose {
+  background-color: #d74680;
+}
+.bg-primary {
+  background-color: #3c5499;
+}
+.bg-navy {
+  background-color: #344b8e;
+}
+.bg-violet, 
+.bg-cyan,  
+.bg-rose,
+.bg-primary, 
+.bg-navy {
+  color: #ffffff;
+}
+.navbar {
+  border: 0px;
+  padding: 36px 0px;
+}
+.navbar-inverse .navbar-nav>.active>a, 
+.navbar-inverse .navbar-nav>.active>a:hover, 
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>.open>a, 
+.navbar-inverse .navbar-nav>.open>a:hover, 
+.navbar-inverse .navbar-nav>.open>a:focus {
+  background-color: #643a79;
+  color: #eae5ed;
+  border-radius: 4px;
+}
+.navbar-inverse .navbar-nav>li>a {
+  color: #eae5ed;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  margin: 30px 10px;
+  font-size: 16px;
+}
+.navbar-brand {
+  color: #fff !important;
+  font-family: 'TitilliumWeb-Bold';
+  font-size: 42px;
+}
+.navbar-brand:hover {
+  color: #ddd !important;
+}
+.navbar-brand span {
+  font-family: 'TitilliumWeb-Light'
+}
+header#home {
+  padding: 200px 0px 96px 0px;
+}
+header#home > div > h1 {
+  font-size: 42.16px;
+  text-transform: none;
+}
+header#home > div > .btn-danger {
+  margin-bottom: 50px;
+  background-color: #eb7d4b;
+  box-shadow: 0 5px #c86a40;
+}
+header#home > div > .btn-danger:active {
+  box-shadow: 0 2px #b25c34 !important;
+}
+header#home > div > .btn-danger:hover {
+  background-color: #db6d3b;
+  box-shadow: 0 5px #b25c34;
+}
+section#services {
+  padding-bottom: 60px;
+}
+section#services hr {
+  border-top: 4px solid #14a58c;
+}
+section#services figure {
+  height: 170px;
+}
+section#services h3 {
+  font-size: 24px;
+  margin: 20px;
+}
+section#services .row h3 + p {
+  height: 80px;
+}
+section#team hr {
+  border-top: 4px solid #c8d9e5;
+}
+section#team figure {
+  padding: 10px 30px;
+}
+section#team figure img {
+  margin: 0 auto;
+}
+section#team h3 {
+  font-size: 24px;
+  margin: 5px;
+}
+section#team h3 + .p-lg {
+  color: #30bae7;
+}
+section .social-icons ul {
+  list-style: none;
+  display: table;
+  margin: 0px auto;
+  padding: 0px;
+}
+section .social-icons ul li {
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  float: left;
+  display: inline;
+  background-color: #bdd1df;
+  margin: 20px 5px;
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  cursor: pointer;
+  padding-top: 4px;
+}
+section .social-icons ul li:hover {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}
+section .social-icons ul li a {
+  color: #ffffff;
+}
+section .social-icons ul li.facebook:hover {
+  background-color: #3B5998;
+}
+section .social-icons ul li.twitter:hover {
+  background-color: #33ccff;
+}
+section .social-icons ul li.linkedin:hover {
+  background-color: #007bb7;
+}
+section .social-icons ul li.mail:hover {
+  background-color: #BD3518;
+}
+section .social-icons ul li:hover a {
+  text-decoration: none;
+}
+section#skills hr {
+  border-top: 4px solid #dfe8ed;
+}
+section#portfolio hr {
+  border-top: 4px solid #e5c37f;
+}
+section#portfolio ul {
+  display: table;
+  margin: 0px auto;
+}
+section#portfolio ul li {
+  background-color: #ebc985;
+  width: 80px;
+  margin: 0px 5px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  margin: 5px;
+}
+section#portfolio ul li a {
+  color: #3c4761;
+  padding: 5px 10px;
+}
+section#portfolio .nav-pills>li.active>a, 
+section#portfolio .nav-pills>li.active>a:hover, 
+section#portfolio .nav-pills>li.active>a:focus {
+  background-color: #ffffff;
+}
+section#portfolio .row img {
+  margin: 30px 0px;
+  width: 100%;
+}
+label {
+  text-transform: uppercase;
+}
+section#portfolio .btn-success {
+  background-color: #17c2a4;
+  box-shadow: 0 5px #14a58c;
+}
+section#portfolio .btn-success:active {
+  box-shadow: 0 2px #118874 !important;
+}
+section#portfolio .btn-success:hover {
+  background-color: #15b094;
+  box-shadow: 0 5px #118874;
+}
+section#about hr {
+  border-top: 4px solid #b73c6d;
+}
+section#about .media-body p {
+  font-family: 'TitilliumWeb-Italic';
+  font-size: 21px;
+}
+section#about .media-body h3 {
+  margin: 0px;
+}
+section#about .media-body p.p-lg {
+  font-family: 'TitilliumWeb-Regular';
+  font-size: 18px;
+  color: #fac996;
+}
+section#about .media-left {
+  padding-right: 30px;
+}
+section#about .media-left img {
+  width: 100px;
+}
+section#about .media-left img:hover,
+figure a img:hover {
+  -webkit-filter: brightness(60%);
+  -moz-filter: brightness(60%);
+  -o-filter: brightness(60%);
+  filter: brightness(60%);
+  transition: all 0.4s ease;
+}
+section#about .media-body a {
+  color: #ffffff;
+}
+section#contact hr {
+  border-top: 4px solid #273a71;
+}
+section#contact .form-control {
+  background-color: #273a71;
+  border: 0px;
+  font-size: 18px;
+  padding: 15px 30px;
+  height: initial;
+  resize: vertical;
+  color: #ffffff;
+}
+.form-group {
+  margin-top: 15px;
+}
+section#contact .form-control::-webkit-input-placeholder {
+  color: #ffffff;
+}
+section#contact .btn-info {
+  background-color: #30bae7;
+  box-shadow: 0 5px #299ec5;
+}
+section#contact .btn-info:active {
+  box-shadow: 0 2px #2388a9 !important;
+}
+section#contact .btn-info:hover {
+  background-color: #30aad6;
+  box-shadow: 0 5px #2388a9;
+}
+footer#footer {
+  padding: 30px;
+}
+footer#footer ul li {
+  margin: 0px 5px;
+  border-radius: 4px;
+}
+footer#footer ul li a {
+  color: #ffffff;
+  font-family: 'TitilliumWeb-SemiBold';
+  font-size: 24px;
+}
+footer#footer .nav-pills>li.active>a, 
+footer#footer .nav-pills>li.active>a:hover, 
+footer#footer .nav-pills>li.active>a:focus {
+  color: #30bae7;
+  background-color: initial;
+}
+footer#footer .nav-pills>li>a:hover, 
+footer#footer .nav-pills>li>a:focus {
+  color: #30bae7;
+  background-color: initial;
+}
+.loader {
+  height: 170px;
+  width: 170px;
+  border-radius: 85px;
+  font-family: 'TitilliumWeb-Light';
+  font-size: 50px;
+  border: 16px solid #dfe8ed;
+  line-height: 130px;
+  /*transform: rotate(45deg);*/
+  transition: all 0.4s ease-in-out;
+  margin: 30px auto;
+}
+.loader.blue {
+  border-color: #30bae7;
+  border-left-color: #dfe8ed;
+}
+.loader.pink {
+  border-color: #d74680;
+  border-left-color: #dfe8ed;
+}
+.loader.green {
+  border-color: #15c7a8;
+  border-left-color: #dfe8ed;
+}
+.loader.orange {
+  border-color: #eb7d4b;
+  border-left-color: #dfe8ed;
+}
+.affix {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  padding: 0px;
+  box-shadow: 0px 4px 4px rgba(0,0,0,0.2);
+}
+.affix a {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  margin: 15px 10px !important;
+}
+.affix a.navbar-brand {
+  margin: 5px !important;
+  /*padding: 10px 15px;*/
+}
+.seperator {
+  height: 100px;
+}
+.popover {
+  width: 200px;
+  z-index: 1050;
+}
+h3.popover-title {
+  margin: 0px !important;
+  line-height: 24px;
+}
+.tooltip {
+  padding: 10px;
+  font-size: 16px;
+}
+@media only screen and (max-width: 768px) {
+  .seperator {
+    height: 0px;
+  }  
+  hr {
+    width: 20%;
+  }
+  .btn {
+    width: 240px;
+  }
+  section#about .media-left {
+    padding-right: 10px;
+  }
+}
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #333; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+.show {
+    visibility: visible !important; /* Show the snackbar */
+
+/* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+    }
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+.navbar-collapse.in {
+  overflow-y: hidden;
+}
