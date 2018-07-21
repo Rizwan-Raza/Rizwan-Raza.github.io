@@ -1,0 +1,305 @@
+* {
+	box-sizing: border-box;
+}
+html, body {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Agency FB','Segoe UI', Arial, Sans-Serif;
+	color: #808080;
+}
+h1, h2 {
+	margin: 0px;
+	padding: 0px;
+}
+button {
+	transition: all ease .2s;
+	cursor: pointer;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.center {
+	margin: auto;
+}
+.clear {
+	clear: both;
+}
+header {
+	padding: 15px 150px 10px 150px;
+	position: relative;
+}
+header img {
+	/*padding: 5px 0px 0px 0px;*/
+	cursor: pointer;
+}
+/*header .left h1, header h2 i.fa {
+	color: #2ea89b;
+}*/
+header .search {
+	position: absolute;
+	left: 50%;
+	padding: 4px 0px;
+	margin-left: -12%;
+	width: 30%;
+}
+header .search input {
+	width: 100%;
+	padding: 5px;
+	border: 1px solid #E0E0E0;
+	color: #2ea89b;
+	font-weight: bold;
+	font-family: 'Agency FB', 'Segoe UI', Arial, Sans-Serif;
+}
+header .search button {
+	background-color: transparent;
+	position: relative;
+	border: none;
+	font-size: 18px;
+	margin-left: -32px;
+	top: -26px;
+	left: 100%;
+	color: #B0B0B0;
+}
+header .right span {
+	margin-top: 10px;
+	vertical-align: super;
+	line-height: 40px;
+	font-size: 24px;
+	font-weight: bold;
+}
+body > nav {
+	background-color: #4bcfc1;
+	padding: 0px 150px;
+}
+body > nav ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+body > nav ul li:first-child {
+	text-align: left;
+	width: 6%;
+}
+body > nav ul li:nth-child(2) {
+	width: 8%;
+}
+body > nav ul li:nth-child(5), body > nav ul li:nth-child(6) {
+	width: 13%;
+}
+body > nav ul li {
+	float: left;
+	margin: 10px 0px;
+	border-right: 2px solid #FFFFFF;
+	width: 10%;
+	text-align: center;
+}
+body > nav ul li:last-child {
+	border-right: none;
+	text-align: right;
+}
+body > nav ul li a {
+	text-decoration: none;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-transform: uppercase;
+	transition: all ease .5s;
+}
+body > nav ul li a:hover {
+	color: #000;
+}
+section.header {
+	background-color: #3dc4b6;
+	padding: 50px 150px 20px 150px;
+	color: #FFFFFF;
+}
+section.header .left {
+	width: 30%;
+	padding-left: 10%;
+}
+section.header .right {
+	width: 50%;
+	padding-right: 10%;
+}
+section.header .right h1 {
+	text-transform: uppercase;
+	font-size: 48px;
+}
+section.header .right p {
+	font-family: Arial;
+}
+section.header .right button {
+	padding: 5px 15px;
+	border-radius: 4px;
+	border: 2px solid #FFFFFF;
+	background-color: #3dc4b6;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: 'Agency FB';
+	font-size: 18px;
+	transition: all ease .4s;
+}
+section.header .right button:hover {
+	background-color: #FFFFFF;
+	color: #3dc4b6;
+}
+section.header .right .navigator .circle {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: #FFFFFF;
+	float: left;
+	margin: 20px 3px 10px 3px;
+	cursor: pointer;
+}
+section.header .right .navigator .circle.active, section.header .right .navigator .circle:hover {
+	background-color: #72dad1;
+}
+section.slider {
+	text-transform: uppercase;
+}
+section.slider > div.left, section.slider > div.right {
+	width: 10%;
+	font-size: 72px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 132px;
+	height: 132px;
+	cursor: pointer;
+}
+section.slider i.fa:hover {
+	color: #000000;
+}
+section.slider > .product {
+	width: 26.66%;
+	display: inline;
+	float: left;
+	border-right: 2px solid #E0E0E0;
+}
+section.slider > .product:nth-child(4) {
+	border-right: none;
+}
+section.slider > div.product .left:nth-child(2) {
+	padding: 20px;
+}
+section.slider > div label {
+	font-size: 24px;
+}
+section.slider > div button {
+	background-color: #3cc496;
+	border: 2px solid #3cc496;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 5px 10px;
+	font-size: 18px;
+	border-radius: 4px;
+	font-family: 'Agency FB';
+}
+section.slider > div button:hover {
+	background-color: #FFFFFF;
+	color: #3cc496;
+}
+section.products-head {
+	padding: 10px 150px;
+	background-color: #3dc4b6;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+section.products-body {
+	padding: 10px 150px;
+}
+section.products-body .row > div {
+	width: 33.33%;
+	float: left;
+}
+section.products-body .row > div > div {
+	border: 2px solid #E0E0E0;
+	border-bottom: 5px solid #3cc496;
+	margin: 30px;
+	padding: 10px 20px;
+}
+section.products-body .row > div div.image {
+	height: 150px;
+}
+section.products-body .row > div > div img {
+	width: 100%;
+	padding: 10px 30px;
+}
+section.products-body .row > div h1 {
+	text-align: center;
+	text-transform: uppercase;
+}
+section.products-body .row div.product-footer {
+	margin: 0px 15%;
+	width: 70%;
+}
+section.products-body .row > div h2.price {
+	display: inline;
+	padding: 10px;
+	line-height: 40px;
+	vertical-align: middle;
+}
+section.products-body .row > div button {
+	background-color: #3cc496;
+	border: 2px solid #3cc496;
+	padding: 5px 15px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: 'Agency FB';
+	border-radius: 4px;
+}
+section.products-body .row > div button:hover {
+	background-color: #FFFFFF;
+	color: #3cc496;
+}
+section.footer {
+	padding: 20px 150px 30px 150px;
+	background-color: #3dc4b6;
+}
+section.footer h2 {
+	color: #FFFFFF;
+	text-transform: uppercase;
+	padding: 10px 0px 10px 0px;
+}
+section.footer nav {
+	width: 25%;
+	display: inline;
+	float: left;
+}
+section.footer nav ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	color: #FFFFFF;
+	font-family: 'Segoe UI';
+	font-size: 14px;
+}
+section.footer nav ul li {
+	padding: 2px 0px;
+}
+section.footer nav ul li a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+section.footer nav ul li a:hover {
+	text-decoration: underline;
+}
+footer {
+	color: #FFFFFF;
+	padding: 15px 150px;
+	text-align: center;
+	font-family: 'Segoe UI Light';
+	background-color: #2ea89b;
+}
+footer a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+footer a:hover {
+	text-decoration: underline;
+}

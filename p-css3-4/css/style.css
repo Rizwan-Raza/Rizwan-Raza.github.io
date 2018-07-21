@@ -1,0 +1,432 @@
+html, body {
+	margin: 0px;
+	padding: 0px;
+	background-image: url("../img/back.jpg");
+	font-family: Arial, sans-serif;
+}
+* {
+	box-sizing: border-box;
+}
+button {
+	cursor: pointer;
+}
+div.main {
+	width: 80%;
+	border-radius: 5px;
+	background-color: white;
+	margin: 30px auto;
+	padding: 5px 10px;
+}
+.container .right {
+	margin: 20px 0px 0px 0px;
+}
+.container div.left img {
+
+}
+.container:first-child h5 {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Arial Black";
+	line-height: 8px;
+}
+.container:first-child small {
+	font-size: 9px;
+	font-family: "Arial Narrow Bold";
+	line-height: 9px;
+}
+.container:first-child button {
+	padding: 10px 12px;
+	font-weight: bold;
+	color: white;
+	background: linear-gradient(#00E0FF, #00B0CC);
+	border-radius: 4px;
+	border: none;
+}
+.container:first-child button:hover {
+	background: linear-gradient(#00B0CC, #00E0FF);
+}
+.container span.user {
+	font-size: 12px;
+	padding: 4px 8px;
+	text-decoration: none;
+}
+.main .container > .right > a {
+	text-decoration: none;
+	color: #000000;
+}
+.main .container > .right > a:hover {
+	text-decoration: underline;
+}
+.padding-8 {
+	padding: 8px;
+}
+.padding-0 {
+	padding: 0px !important;
+}
+.container .right.padding-8 {
+	margin: 12px 0px 0px 0px;
+}
+.container .right.padding-8 span, .container .right.padding-8 span b {
+	line-height: 38px;
+	vertical-align: top;
+	/*color: red;*/
+}
+.center {
+	margin: 0px auto;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.clear {
+	clear: both;
+}
+.clear:hover {
+	background-color: transparent !important;
+}
+.fa-shopping-cart {
+	font-size: 24px !important;
+	line-height: 12px !important;
+	vertical-align: top;
+}
+nav {
+	margin: 10px 0px;
+	background: linear-gradient(#C00000, #FF4040);
+	border-radius: 4px;
+}
+nav ul {
+	padding: 0px;
+	margin: 13px 10px;
+}
+nav ul li {
+	display: inline;
+	list-style: none;
+	font-weight: bold;
+}
+nav ul li:hover a {
+	background: linear-gradient(#FF4040, #C00000);
+}
+li a {
+	padding: 13px;
+	text-decoration: none;
+	color: white;
+}
+nav form input, nav form button {
+	padding: 6px 10px;
+	border-radius: 4px;
+	border: none;
+}
+nav form button:hover {
+	background-color: #EEEEEE;
+}
+.main > section {
+	margin: 20px 0px;
+}
+section.sidebar {
+	width: 25%;
+	padding-right: 10px;
+}
+section.sidebar .heading {
+	background: linear-gradient(#606060,#101010);
+	color: white;
+	font-weight: normal;
+	text-align: center;
+	padding: 8px;
+	margin: 0px;
+	border-radius: 5px 5px 0px 0px;
+}
+section.sidebar .content.first > div:hover {
+	/*background-color: #EEEEEE;*/
+}
+section.sidebar .content > div > .left {
+	width: 30%;
+}
+section.sidebar .content > div > .left img {
+	max-height: 100%;
+	max-width: 100%;
+}
+section.sidebar .content > div > .right {
+	width: 70%;
+}
+section.sidebar .content > div > .right:last-child {
+	width: auto;
+}
+section.sidebar .content.second {
+	border: none;
+}
+section.sidebar .content > div {
+	padding: 10px 10px 0px 10px;
+	border-bottom: 1px dotted grey;
+}
+section.sidebar .content.second > div {
+	padding: 10px;
+}
+section.sidebar .content.second > div:hover {
+	background-color: #EEEEEE;
+}
+section.sidebar .content.second > div > i.fa-caret-right {
+	background-color: #e0373a;
+	padding: 0px 4px 0px 6px;
+	text-align: center;
+	border-radius: 50%;
+	color: white;
+}
+section.sidebar .fa-shopping-cart {
+	cursor: pointer;
+	transition: all ease .4s;
+}
+section.sidebar .fa-shopping-cart:hover {
+	color: #e0373a;
+}
+section.sidebar .view-more {
+	border: none !important;
+	padding: 10px !important;
+	border-radius: 4px;
+	cursor: pointer;
+	margin: 5px 0px 10px 0px
+}
+section.sidebar .view-more:hover {
+	border: 1px solid #DDDDDD !important;
+	padding: 9px !important;
+	background-color: #EEEEEE;
+}
+section.sidebar .content .price {
+	padding-top: 5px;
+	font-size: 24px;
+	color: #D02020;
+	font-family: 'Arial Narrow';
+}
+section.sidebar .content > div .right {
+	font-size: 14px;
+	padding: 8px 0px;
+}
+section.sidebar .content.third {
+	padding: 0px 10px;
+}
+section.sidebar .content.third .fb-plaf {
+	font-size: 16px;
+	color: #445893;
+}
+section.sidebar .content.third div.label {
+	font-size: 12px;
+}
+section.sidebar .content.third div.footer {
+	font-size: 12px;
+	padding: 20px 0px 15px 0px;
+}
+section.sidebar .content.third div.footer i.fa {
+	font-size: 18px;
+	line-height: 12px;
+	vertical-align: middle;
+	color: #445893;
+}
+section.body {
+	width: 75%;
+	padding-left: 10px;
+}
+section.body div.header {
+	background: linear-gradient(#EEEEEE, #FFFFFF, #FFFFFF, #EEEEEE);
+	border: 1px solid #D0D0D0;
+	padding: 8px 10px;
+	padding-top: 40px;
+	padding-bottom: 0px;
+}
+section.body > .header > div {
+	width: 50%;
+}
+section.body .right {
+	padding: 20px;
+	padding-bottom: 0px;
+}
+section.body .right h1 {
+	font-family: 'GeoSlab703 Md BT';
+	font-size: 48px;
+	margin: 0px;
+}
+section.body .right h2 {
+	font-family: 'GeoSlab703 Md BT';
+	color: #d84646;
+	margin: 0px;
+	padding: 0px;
+}
+section.body .right .btn {
+	border: 1px solid #c58919;
+	border-radius: 4px;
+	background: linear-gradient(#e39d48, #febb4a, #e39d48);
+	padding: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #654810;
+}
+section.body .right .btn:hover {
+	background: linear-gradient(#febb4a, #e39d48, #febb4a);
+}
+section.body .circle {
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	border: 1px solid grey;
+	margin: 5px;
+	background: radial-gradient(#E0E0E0, #A0A0A0);
+	cursor: pointer;
+}
+section.body .circle:hover, section.body .circle.active {
+	background: radial-gradient(#B0B0B0, #808080);
+}
+.fa-angle-double-right {
+	color: #cf5560;
+}
+.like {
+	border-radius: 4px;
+	border: 1px solid #d0d2de;
+	background-color: #f3eef5;
+	padding: 3px 6px;
+	color: #445893;
+	font-size: 12px;
+}
+.like:hover {
+	background-color: #DDDDDD;
+}
+.fb-user.left {
+	width: 33.33%;
+}
+.fb-user.left label {
+	display: block;
+	font-size: 12px;
+	line-height: 12px;
+	text-align: center;
+}
+.fb-user.left img {
+	width: 90%;
+	margin: 10px 5% 0px 5%;
+	cursor: pointer;
+}
+.fb-user.left img:hover + label {
+	color: #445893;
+	/*font-weight: bold;*/
+}
+.gallery .left {
+	margin: 10px 0px;
+	width: 33.33%;
+}
+.gallery .left > div {
+	border: 1px solid #DDDDDD;
+	border-radius: 4px;
+	margin: 10px;
+}
+.gallery .left > div > img {
+	width: 64%;
+	margin: 10px 18%;
+}
+.gallery .row.second .left > div > img {
+	width: 80%;
+	margin: 10px 10%;
+}
+.gallery .row.second .left:first-child > div > img {
+	width: 92%;
+	margin: 10px 4%;
+}
+.gallery .row {
+	margin: 0px -10px;
+}
+.gallery .left > div > label {
+	font-family: 'Segoe UI Light';
+	text-align: center;
+	display: block;
+	font-weight: bold;
+	font-size: 18px;
+}
+.gallery .left > div > div {
+	text-align: center;
+	margin: 10px 0px;
+}
+.gallery .left > div > div.a2wl {
+	font-size: 12px;
+	padding: 12px 0px;
+	background-color: #EEEEEE;
+	margin-bottom: 0px;
+	cursor: pointer;
+}
+.gallery .left > div > div.a2wl:hover {
+	background-color: #DDDDDD;
+}
+.gallery .left > div > div > span.price {
+	color: #df1312;
+	margin: 0px 10px;
+	font-weight: bold;
+}
+.gallery .left > div > div > button {
+	background: linear-gradient(#606060, #202020);
+	color: #FFFFFF;
+	border: 1px solid #101010;
+	border-radius: 4px;
+	padding: 5px 8px;
+}
+.gallery .left > div > div > button:hover {
+	background: linear-gradient(#202020, #606060);
+}
+footer.first {
+	background-color: #404040;
+	color: #D0D0D0;
+	padding: 10px 0px;
+}
+footer.first > div {
+	padding: 20px 0px;
+/*	width: 80%;
+	margin: 0px auto;*/
+}
+footer.first div a {
+	text-decoration: none;
+	color: #D0D0D0;
+	padding: 0px 5px;
+	font-size: 14px;
+}
+footer.first div a:hover {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+footer.first div input {
+	padding: 10px 8px;
+	margin: -10px 0px;
+	border-radius: 4px;
+	border: 1px solid #D0D0D0;
+}
+footer.first div button {
+	padding: 6px 10px;
+	margin: -10px 0px;
+	border-radius: 4px;
+	border: 1px solid #d6352b;
+	background-color: #d6352b;
+	color: #FFFFFF;
+	font-size: 24px;
+	line-height: 16px;
+	vertical-align: middle;
+	transition: all ease .4s;
+}
+footer > div {
+	width: 80%;
+	margin: 0px auto;
+}
+footer.first div button:hover {
+	background-color: #FFFFFF;
+	color: #d6352b;
+}
+footer.second > div {
+	padding: 20px 0px;
+}
+footer.second a {
+	color: #FF4040;
+	text-decoration: none;
+}
+footer.second a:hover {
+	text-decoration: underline;
+}
+footer.second .social img {
+	height: 24px;
+	width: 24px;
+	text-align: center;
+	border-radius: 3px;
+	cursor: pointer;
+}
