@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Hello World
+		</title>
+		<style type="text/css">
+			aside#tab
+			{
+				height:500px;
+				width: 500px;
+				background-color: red;
+			}
+		</style>
+		<script type="text/javascript">
+			function tabs()
+			{
+				if(document.getElementById("tab").style.visibility=="hidden")
+					document.getElementById("tab").style.visibility="visible";
+				else
+					document.getElementById("tab").style.visibility="hidden";
+			}
+		</script>
+	</head>
+	<body>
+	 	<button onclick="tabs()">More</button>
+		<aside id="tab">
+			Hello World
+		</aside>
+	</body>
+</html>

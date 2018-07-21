@@ -1,0 +1,54 @@
+<style>
+  aside.c
+  {
+  	width:1583px;
+  	height:96px;
+  	font-family:sans-serif;
+  	color:white;
+  	font-size:16px;
+  	margin:0px;
+  	padding:10px 0px;
+  	background-color:black;
+  	border-bottom:4px solid red;
+  }
+  aside.c center.o
+  {
+  	width:992px;
+  	height:64px;
+  	margin:15px 0px;
+  	background-color:blue;
+  	text-align:left;
+  }
+  aside.c center.o aside.n
+  {
+  	border-left:none;
+  	float:left;
+  	height:64px;
+  }
+  aside.c center.o aside.t
+  {
+  	border-left:1px solid grey;
+  	height:64px;
+  	float:left;
+  }
+  aside.c center.o aside aside
+  {
+  	margin:0px 106.75px 24px 10px;
+  	padding:0px;
+  }
+  aside.c center.o aside aside a
+  {
+  	text-decoration:none;
+  	color:white;
+  }aside.c center.o aside aside a:hover
+  {
+  	text-decoration:underline;
+  }
+  aside.c center.o aside aside img
+  {
+  	vertical-align:middle;
+  	height:15px;
+  	margin:0px;
+  	margin-left:5px;
+  }
+</style>

@@ -1,0 +1,396 @@
+	body
+	{
+	  !background-color:blue;
+	  font-family:sans-serif;
+	}
+      header.main
+      {
+        position:absolute;
+	    top:0px;
+	    left:0px;
+        height:40px;
+		width:1583px;
+		float:left;
+		!background-color:red;
+      }
+	  header.bbc
+      {
+		width:976px;
+		height:40px;
+	  }
+	  header.img
+	  {
+	    position:relative;
+		top:8px;
+		left:-5px;
+	    width:94px;
+		height:40px;
+		float:left;
+	  }
+	  header.tabs
+	  {
+		!background-color:#43609c;
+		float:left;
+	  }
+	  header.tabs ul
+	  {
+	    position:relative;
+		top:-36px;
+		width:882px;
+		padding:20px 0px;
+		!background-color:green;
+		float:left;
+	  }
+	  header.tabs ul div
+	  {
+		
+		font-weight:bolder;
+		font-size:14px;
+	    border-left:1px #ccc solid;
+		padding:4px 0px;
+		float:left;
+	  }
+	  header.tabs ul div li
+	  {
+	    display:inline;
+		padding:8px 15.5px;
+		float:left;
+	  }
+  	  header.tabs ul div li.sign:hover
+	  {
+	    border-bottom:4px solid #1188BB;
+	  }
+  	  header.tabs ul div li.news:hover
+	  {
+	    border-bottom:4px solid #992211;
+	  }
+  	  header.tabs ul div li.sprt:hover
+	  {
+	    border-bottom:4px solid #FFEE11;
+	  }
+  	  header.tabs ul div li.wthr:hover
+	  {
+	    border-bottom:4px solid #88CCEE;
+	  }
+  	  header.tabs ul div li.shop:hover
+	  {
+	    border-bottom:4px solid #2283C7;
+	  }
+  	  header.tabs ul div li:hover
+	  {
+	    border-bottom:4px solid #262626;
+	  }
+	  header.tabs ul div li.sign
+	  {
+		padding-right:80px;
+		height:16px;
+		float:left;
+	  }
+	  header.tabs ul div li.sign img
+	  {
+		height:18px;
+		width:18px;
+		padding-right:6px;
+		float:left;
+	  }
+  	  header.tabs ul li.srch
+	  {
+	    display:inline;
+	  }
+	  header.tabs ul li.srch input
+	  { 
+	    border:0px;
+		height:24px;
+		width:166px;
+		background-color:#E4E4E4;
+		margin-top:8px;
+		color:black;
+		font-size:14px;
+		float:right;
+	  }
+	  header.tabs ul li.srch img
+	  {
+		height:17px;
+		width:17px;
+		background-color:#E4E4E4;
+		padding:3.5px 7.5px;
+		margin-top:8px;
+		float:right;
+	  }
+	  nav.mbar
+	  {
+		position:absolute;
+		top:40px;
+		left:0px;
+		height:92px;
+		width:1583px;
+		float:left;
+		background-color:#cc0101;
+		!background-color:green;
+	  }
+	  nav.fbar
+	  {
+	    border-top:1px #DA4C4C solid;
+	    width:1583px;
+		height:56px;
+		!background-color:purple;
+	  }
+	  nav.news
+	  {
+	    height:56px;
+		width:976px;
+		!background-color:pink;
+	  }
+	  nav.sbar
+	  {
+	    border-top:1px #DA4C4C solid;
+	    height:35px;
+		width:1583px;
+		!background-color:orange;
+	  }
+	  nav.menu
+	  {
+	    width:976px;
+		height:35px;
+	  }
+	  nav.menu ul
+	  {
+		margin:8px -12px;
+		padding:0px;
+	  }
+	  nav.menu ul div
+	  {
+		float:left;
+		height:23px;
+	  }
+  	  nav.menu ul div li
+	  {
+	    display:inline;
+		!background-color:olive;
+		
+		font-size:14px;
+		padding:0px 12.25px;
+		border-right:1px #DA4C4C solid;
+		color:white;
+	  }
+	  nav.menu ul div:hover
+	  {
+		border-bottom:4px solid #ffffff;
+	  }
+	  nav.menu ul div.more li
+	  {
+	    position:relative;
+		top:-2px;
+	    border:none;
+	  }
+	  nav.menu ul div.more:hover
+	  {
+		background-color:black;
+		border:none;
+		padding:8px 0px 3px 0px;
+		margin-bottom:-7px;
+		position:relative;
+		top:-8px;
+	  }
+  	  nav.menu ul div.more li div#tab
+	  {
+	    !display:none;
+	  }
+  	  div.sec
+	  {
+	    width:980px;
+		height:1000px;
+		background-color:yellow;
+	  }
+	  section.pan
+	  {
+	    width:661px;
+		height:1000px;
+		background-color:brown;
+		float:left;
+	  }
+	  section.pan section.fst
+	  {
+	    width:661px;
+		height:335px;
+		background-color:pink;
+		border-bottom:1px solid #ededed;
+		float:left;
+	  }
+	  section.pan section.fst p
+	  {
+	    margin:0px;
+	    padding:25px 0px 20px 0px;
+		
+		font-size:32px;
+		font-weight:bolder;
+	  }
+	  section.pan section.fst blockquote
+	  {
+	    margin:0px;
+	    padding:0px;
+		text-align:left;
+		background-color:blue;
+		line-height:18px;
+		letter-spacing:0.2px;
+		float:left;
+		font-size:14px;
+		color:#767676;
+		height:125px;
+		width:240px;
+	  }
+	  section.pan section.fst blockquote ul li
+	  {
+	    display:inline;
+	    margin-left:-40px;
+	    padding-right:45px;
+		font-size:14px;
+		width:250px;
+	    position:relative;
+		top:-8px;
+	  }
+	  section.pan section.fst blockquote ul li img
+	  {
+	    position:relative;
+		top:2px;
+	    margin-right:3px;
+	  }
+	  section section.img img
+	  {
+	    height:224px;
+		width:395px;
+		float:left;
+	  }
+	  section section.text p
+	  {
+	    height:25px;
+		width:100%;
+		text-align:left;
+		float:left;
+		background-color:green;
+	  }
+	  section section.text div.block
+	  {
+	    height:224px;
+		background-color:yellow;
+		width:250px;
+		float:left;
+	  }
+	  section section.text div.block ul li img
+	  {
+	    height:15px;
+	  }
+	  section div.hd
+	  {
+	    background-color:red;
+		height:40px;
+		width:100%;
+	  }
+	  section div.hd a
+	  {
+	    position:relative;
+		top:60px;
+	    float:left;
+		font-size:24px;
+		color:black;
+		text-decoration:none;
+	  }
+	  section div.hd a:hover
+	  {
+	    color:#1167A8;
+	  }
+	  hr.sep
+	  {
+		margin-left:0px;
+	    width:40px;
+		height:1px;
+		border:0px;
+		background-color:red;
+	  }
+	  .vr
+	  {
+	    border-left:1px grey solid;
+		padding-left:8px;
+	  }
+	  article
+	  {
+	    width:315px;
+		height:1000px;
+/*		margin:10px;*/
+		float:left;
+	  }
+	  article div.h
+	  {
+	    float:left;
+		text-align:left;
+	    padding-left:16px;
+		padding-top:22px;
+		border-left:1px solid #ededed;
+		background-color:red;
+	  }
+	  article div.h span
+	  {
+		font-size:24px;
+		text-align:left;
+		float:left;
+	  }
+	  article div.h p
+	  {
+		text-align:left;
+		float:left;
+	  }
+	  article div.h img.live
+	  {
+	    float:left;
+		clear:both;
+	    width:50px;
+		height:20px;
+		mergin-right:5px;
+	  }
+	  div.links
+	  {
+	    float:left;
+	  }
+	  div.links img.play
+	  {
+	    height:12px;
+		width:15px;
+		float:left;
+		margin-top:3px;
+		padding-right:5px;
+	  }
+/*	  aside.ct
+	  {
+	    
+	  }
+	  aside.ct aside.ct-mn
+	  {
+	    
+	  }
+	  aside.ct aside.ct-mn aside.ct-mn-tab
+	  {
+	    
+	  }
+	  aside.ct aside.ct-mn aside aside
+	  {
+	    !padding:10px 0px;
+		!float:left;
+		!clear:both;
+		!color:red;
+	  }*/
+	  .links
+	  {
+		font-size:14px;
+	  }
+	  .links a
+	  {
+	    text-decoration:none;
+		float:left;
+		line-height:24px;
+		color:black;
+		letter-spacing:0.1px;
+	  }
+	  a:hover
+	  {
+	    color:#1167A8;
+	  }

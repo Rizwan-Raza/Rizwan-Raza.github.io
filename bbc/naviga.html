@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <style>
+	  nav.sbar
+	  {
+	    border-top:1px #DA4C4C solid;
+	    height:35px;
+		width:1583px;
+		background-color:#cc0101;
+	  }
+	  nav.menu
+	  {
+	    width:976px;
+		height:35px;
+	  }
+	  nav.menu ul
+	  {
+		margin:8px -12px;
+		padding:0px;
+	  }
+	  nav.menu ul div
+	  {
+		float:left;
+		height:23px;
+	  }
+  	  nav.menu ul div li
+	  {
+	    display:inline;
+		background-color:olive;		
+		font-size:14px;
+		padding:0px 12.25px;
+		border-right:1px #DA4C4C solid;
+		color:white;
+	  }
+	  nav.menu ul div:hover
+	  {
+		border-bottom:4px solid #ffffff;
+	  }
+	  nav.menu ul div.more li
+	  {
+	    position:relative;
+		top:-2px;
+	    border:none;
+	  }
+	  nav.menu ul div.more:hover
+	  {
+		background-color:black;
+		border:none;
+		padding:8px 0px 3px 0px;
+		margin-bottom:-7px;
+		position:relative;
+		top:-8px;
+	  }
+  	  nav.menu ul div.more li div#tab
+	  {
+	    !display:none;
+	  }
+  </style>
+ </head>
+
+ <body>
+  	  <nav class=sbar>
+        <nav class=menu>
+		  <ul>
+		    <div><li>Home</div>
+		    <div><li>Video</div>
+		    <div><li>World</div>
+		    <div><li>Asia</div>
+		    <div><li>UK</div>
+		    <div><li>Business</div>
+		    <div><li>Tech</div>
+		    <div><li>Science</div>
+		    <div><li>Magazine</div>
+		    <div><li>Entertainment & Arts</div>
+		    <div><li>Health</div>
+		    <div class=more>
+			  <li onclick="tab()">More &#9662;
+			    <div id="tab"></div>
+			</div>
+		  </ul>
+		</nav>
+	  </nav>
+ </body>
+</html>

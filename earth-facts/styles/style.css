@@ -1,0 +1,372 @@
+   body
+   {
+     background-color:black;
+	 color:white;
+	 !position:absolute;
+   !left:50%;
+   !margin-left:-570px;
+	 font-family:sans-serif;
+   }
+   header
+   {
+     position:relative;
+	 top:21px;
+   width:1140px;
+	 height:120px;
+	 !background-color:yellow;
+   }
+   header img
+   {
+     float:left;
+   }
+   header img:hover
+   {
+ 	 opacity:0.6;
+	 filter:alpha(opacity=60); 
+   }
+   nav
+   {
+     position:relative;
+	 left:335px;
+	 top:90px;
+   }
+   nav ul 
+   {
+     list-style: none;
+	 padding: 0px;
+	 margin: 0px;
+   }
+   nav ul li
+   {
+     display: block;
+	 position: relative;
+	 font-weight:bold;
+	 letter-spacing:0.5px;
+	 float: left;
+   }
+   nav li ul
+   {
+     display: none;
+   }
+   nav ul li a
+   {
+     display: block;
+	 background: #000;
+	 padding:10px;
+	 text-decoration: none;
+	 color: #fff;
+   }
+   nav ul li a:hover
+   {
+     background: #fff;
+	 color:black;
+   }
+   nav li:hover ul
+   {
+     display: block;
+	 position: absolute;
+   }
+   nav li:hover li 
+   {
+     float: none;
+	 font-weight:normal;
+	 font-size:15px;
+	 letter-spacing:0px;
+	 width:150px;
+	 z-index:1;
+   }
+   nav li:hover a
+   {
+     background: #fff;
+	 color:black;
+   }
+   nav li:hover a.odd 
+   {
+     background: #1A1A1A;
+	 color:white;
+   }
+   nav li:hover a.even 
+   {
+     background: #0E0E0E;
+	 color:white;
+   }
+   nav li:hover li a:hover 
+   {
+     background: #fff;
+ 	 color:black;
+   }
+   hr
+   {
+	 border:0;
+	 height:1px;
+	 background-color:#333;
+     width:100%;
+   }
+   .text
+   {
+	 !font-family:AlQalam Farhan,Bauhaus 93,Butterbelly,Bernard MT,arial,sans-serif;
+	 font-family:AlQalam Farhan,sans-serif;
+	 font-weight:bolder;
+	 font-size:28px;
+   }
+   .search
+   {
+     border:none;
+	 height:28px;
+	 width:320px;
+	 font-size:17px;
+	 background-color:#2A2A2A;
+	 float:left;
+   }
+   .txt
+   {
+     margin:0px;
+	 width:800px;
+	 text-align:justify;
+   }
+   .txt span
+   {
+	 font-weight:bolder
+   }
+   .txt a
+   {
+     text-decoration:none;
+     color:#B7DEED;
+   }
+   .txt a:hover
+   {
+     color:red;
+   }
+   section
+   {
+     float:left;
+     width:800px;
+     position:relative;
+	 letter-spacing:1px;
+	 word-spacing:1px;
+	 top:20px;
+	 !background-color:yellow;
+   }
+   section h
+   {
+	 color:#57FF8D;
+	 font-family:AlQalam Farhan,sans-serif;
+	 font-size:24px;
+	 font-weight:bolder;
+	 position:relative;
+	 top:20px;
+   }
+   section div span
+   {
+	 font-weight:bolder;
+   }
+   section div a
+   {
+     text-decoration:none;
+	 color:#B7DEED;
+   }
+   section div a:hover
+   {
+	 color:red;
+   }
+   section div
+   {
+	 position:relative;
+	 top:40px;
+   }
+   section div.share img
+   {
+     position:relative;
+	 left:240px;
+	 top:24px;
+     height:50px;
+	 width:50px;
+	 opacity:1.0;
+	 filter:alpha(opacity=100); 
+   }
+   section div.share img:hover
+   {
+	 opacity:0.4;
+	 filter:alpha(opacity=40); 
+	 cursor:pointer;
+   }
+   section h.cmnt
+   {
+     color:white;
+	 font-family:AlQalam Farhan,sans-serif;
+	 font-size:28px;
+	 font-weight:bolder;
+   }
+   article
+   {
+     width:320px;
+	 float:left;
+     position:relative;
+	 top:40px;
+	 left:20px;
+	 letter-spacing:1px;
+	 word-spacing:1px;
+	 !background-color:red;
+   }
+   article h
+   {
+	 font-family:AlQalam Farhan,sans-serif;
+	 font-size:24px;
+	 font-weight:bolder;
+	 position:relative;
+	 top:20px;
+   }
+   article div span
+   {
+	 font-weight:bolder;
+   }
+   article div
+   {
+	 position:relative;
+	 top:40px;
+   }
+   .title
+   {
+     float:left;
+     height:77px;
+	 width:1140px;
+	 position:relative;
+	 top:28px;
+	 !background-color:green;
+   }
+   .planets
+   {
+	 margin-left:-40px;
+   }
+   .planets li
+   {
+     padding:5px 0px;
+   }
+   .planets li img
+   {
+	 position:relative;
+     top:3px;
+   }
+   .margin li a
+   {
+     margin-left:5px;
+   }
+   .planets li a
+   {
+     text-decoration:none;
+	 color:#B7DEED;
+   }
+   .planets li a:hover
+   {
+	 color:red;
+   }
+   .top
+   {
+     position:relative;
+	 top:80px;
+   }
+   .img
+   {
+     width:75px;
+	 height:120px;
+	 float:left;
+     position:relative;
+	 top:0px;
+   }
+   .ttt
+   {
+     width:220px;
+	 height:120px;
+     position:relative;
+	 text-align:justify;
+	 top:0px;
+	 left:20px;
+     float:left;
+   }
+   .top2
+   {
+     position:relative;
+	 top:30px;
+   }
+   .top3
+   {
+     position:relative;
+	 top:50px;
+   }
+   .right
+   {
+     float:right;
+   }
+   .left
+   {
+     float:left;
+   }
+   .drop
+   {
+     position:relative;
+	 top:120px;
+   }
+   .profile
+   {
+     padding:20px 0px;
+     width:80px;
+	 !background-color:red;
+	 float:left;
+   }
+   .comnt
+   {
+	 width:720px;
+	 float:left;
+   }
+   .comnt a
+   {
+     padding:10px 0px 15px 0px;
+     font-weight:bolder;
+	 width:720px;
+	 float:left;
+   }
+   footer
+   {
+	 clear:both;
+	 width:1140px;
+	 !background-color:red;
+   }
+   footer div
+   {
+     position:relative;
+	 top:200px;
+	 width:380px;
+	 height:307px;
+	 float:left;
+	 !background-color:yellow;
+   }
+   footer div h
+   {
+     font-size:24px;
+	 font-family:AlQalam Farhan,sans-serif;
+	 color:white;
+	 !background-color:green;
+   }
+   footer.foot
+   {
+     margin:20px 0px 80px 0px;
+	 font-weight:bold;
+	 !background-color:blue;
+   }
+   footer.foot a
+   {
+     text-decoration:none;
+	 color:white;
+	 !background-color:orange;
+   }
+   footer.foot a:hover
+   {
+	 color:#E41B00;
+	 !background-color:brown;
+   }
+   .line
+   {
+     position:relative;
+	 !background-color:pink;
+	 top:200px;
+   }

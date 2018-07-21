@@ -1,0 +1,91 @@
+<html>
+ <head>
+  <title> My Web Page </title>
+  <script type=text/javascript>
+  function Dom()
+  {
+	    var email=document.getElementById("email").value;
+	    var pword=document.getElementById("pword").value;
+	alert("Are you "+email+"and your passord is "+pword);
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+var s = fso.CreateTextFile("./NewFile.txt", true);
+alert("The file has been created");
+	}
+  </script>
+  <style>
+  body
+  {
+	background-image:url(images/rr.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+  }
+  marquee
+  {
+	font-size:25;
+	cursor: crosshair;
+	font-family:cooper;
+	background-image:url(images/buff.png);
+  }
+  th
+  {
+	background-color:#43609c;
+	border-color:red;
+  }
+  </style>
+ </head>
+
+ <body>
+ <table valign=top align=right bordercolor=black background="images/tra.png">
+ <tr style="font-family:arial;color:black;font-weight:bolder;">
+ <td>Username</td> <td>Password</td>
+ </tr>
+ <tr> <td><input type="textbox" id="email"></td> <td><input type="password" id="pword"></td>
+ <td>
+ <input type="button" onClick="Dom()" value="Login">
+ </td> </tr>
+ <tr style="font-family:arial;color:black;">
+ <td><input type="checkbox">Keep me logged in</td>
+ <td>
+ <a style="text-decoration:none;color:black;" color="white" href="page.html">
+ forgot your password?</a>
+ </td>
+ </tr>
+ </table>
+  <br><br><br><br>
+  <marquee align=right behavior="alternate">Welcome to proLog Academy</marquee>
+  <hr>
+  <h2 align=right><font face="cooper" color=ffff00><a style="text-decoration:none;color:yellow;" href="signup.html">Sign up</a></h2>
+  <h2 align=center>Database</h2>
+ <table align="center" border=3 cellpadding=5 cellspacing=0 width=69% height=42% background="images/tra.png" style=";font-size:20px;font-weight:bolder;text-align:center;">
+  <a href="images/never_give_up.jpg">
+  <img src="images/never_give_up.jpg" align=left valign=top height=41% width=15%>
+  </a>
+  <tr style="border-color:red"; bgcolor=43609c>
+  <td>S.No.</td><td>Name</td><td>Age</td>
+  </tr>
+  <tr>
+  <td>1.</td> 
+  <td>Rizwan Raza</td> 
+  <td>17</td>
+  </tr>
+  <tr>
+  <td>2.</td>
+  <td>Shadab Alam</td>
+  <td>17</td>
+  </tr>
+  <tr>
+  <td>3.</td>
+  <td>Alamgir Sheikh</td>
+  <td>18</td>
+  </tr>
+  <tr>
+  <td>4.</td>
+  <td>Mehtab Uddin</td>
+  <td>18</td>
+  </tr>
+  <a href="images/never_give_up.jpg">
+  <img src="images/never_give_up.jpg" align=right valign=top height=41% width=15%>
+  </a>
+  </table>
+</body>
+</html>

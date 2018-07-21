@@ -1,0 +1,369 @@
+<html>
+  <head>
+    <title>Home - BBC News</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<meta name="charset" value="utf-8">
+	<script>
+	 function tab()
+	 {
+	 	if(document.getElementById("tab-menu").style.visibility=="hidden")
+	 		document.getElementById("tab-menu").style.visibility="visible";
+	 	else
+	 		document.getElementById("tab-menu").style.visibility="hidden";
+	 }
+	</script>
+	<style type="text/css">
+		aside#tab-menu
+		{
+			visibility:hidden;
+		}
+		aside#tab-a
+		{
+			display:block;
+			position:absolute;
+			top:7px;
+			left:-1102px;
+			width:1583px;
+			height:96px;
+			padding:10px 0px;
+			line-height:16px;
+			font-size:16px;
+			background-color:black;
+			border-bottom:4px solid red;
+		}
+		#tab-b
+		{
+			padding:15px 0px;
+			width:992px;
+			height:64px;
+		}
+		aside#tab-a a
+		{
+			color:white;
+			text-shadow:1px 1px 1px gray;
+			text-decoration: none;
+		}
+		aside#tab-a a:hover
+		{
+			color:white;
+			text-shadow:1px 1px 1px gray;
+			text-decoration: underline;
+		}
+		aside#tab-cc aside.fst,
+		aside#tab-c aside.fst
+		{
+			padding:0px 90px 15px 16px;
+			text-align: left;
+		}
+		aside#tab-c aside.snd
+		{
+			padding:15px 90px 0px 16px;
+			text-align: left;
+		}
+		aside#tab-c
+		{
+			float:left;
+			border-right:1px solid grey;
+		}
+		aside#tab-cc
+		{
+			border-right:none;
+		}
+		aside#tab-cc img#image,
+		aside#tab-c img#image
+		{
+			margin-left: 10px;
+			margin-bottom: -3px;
+			height:15px;
+			width: 15px;
+		}
+		article div.share
+		{
+			height:600px;
+			width: 305px;
+			position: relative;
+			top: 10px;
+			font-size: 24px;
+			color:black;
+			text-align: left;
+		}
+		article div.share img
+		{
+			height: 15px;
+			width: 15px;
+		}
+	</style>
+  </head>
+  <body>
+   <table><tr><td align="center">
+    <header class=main>
+      <header class=bbc>
+	    <header class=img><img src=images/bbc.png></header>
+	    <header class=tabs>
+		  <ul>
+		    <div><li class=sign><img src=images/sign.png>Sign in</div>
+			<div><li class=news>News</div>
+			<div><li class=sprt>Sport</div>
+			<div><li class=wthr>Weather</div>
+			<div><li class=shop>Shop</div>
+			<div><li>Earth</div>
+			<div><li>Travel</div>
+			<div class=more style="border-right:1px #ccc solid;"><li>More</div>
+			<li class=srch><img src=images/search.png><input type="text" placeholder=" Search">
+		  </ul>
+		</header>
+	  </header>
+    </header>
+
+
+    <nav class=mbar>
+
+	  <nav class=fbar>
+        <nav class=news><img src=images/news.png height=30px width=122px style="padding:13px 0px;" align=left></nav>
+	  </nav>
+
+	  <nav class=sbar>
+        <nav class=menu>
+		  <ul>
+		    <div><li>Home</div>
+		    <div><li>Video</div>
+		    <div><li>World</div>
+		    <div><li>Asia</div>
+		    <div><li>UK</div>
+		    <div><li>Business</div>
+		    <div><li>Tech</div>
+		    <div><li>Science</div>
+		    <div><li>Magazine</div>
+		    <div><li>Entertainment & Arts</div>
+		    <div><li>Health</div>
+		    <div class=more>
+			  <li onclick="tab()">More &#9662;
+			    <aside id="tab-menu">
+			    	<aside id="tab-a">
+			    		<center id="tab-b">
+			    			<aside id="tab-c">
+			    				<aside class="fst">
+			    					<a href="https://www.facebook.com/proLog4u">World News TV</a>
+			    					<img src="images/gt.png" id="image">
+			    				</aside>
+			    				<aside class="snd">
+			    					<a href="https://www.facebook.com/proLog4u">In Pictures</a>
+			    					<img src="images/gt.png" id="image">
+			    				</aside>
+			    			</aside>
+			    			<aside id="tab-c">
+			    				<aside class="fst">
+			    					<a href="https://www.facebook.com/proLog4u">Also in the News</a>
+			    					<img src="images/gt.png" id="image">
+			    				</aside>
+			    				<aside class="snd">
+			    					<a href="https://www.facebook.com/proLog4u">Special Reports</a>
+			    					<img src="images/gt.png" id="image">
+			    				</aside>
+			    			</aside>
+			    			<aside id="tab-c">
+			    				<aside class="fst">
+			    					<a href="https://www.facebook.com/proLog4u">Explainers</a>
+			    					<img src="images/gt.png" id="image">
+			    				</aside>
+			    				<aside class="snd">
+			    					<a href="https://www.facebook.com/proLog4u">The Reporters</a>
+			    					<img src="images/gt.png" id="image">
+			    				</aside>
+			    			</aside>
+			    			<aside id="tab-cc">
+			    				<aside class="fst">
+			    					<a href="https://www.facebook.com/proLog4u" style="padding-left:16px;">Have Your Say</a>
+			    					<img src="images/gt.png" id="image">
+			    				</aside>
+			    			</aside>
+			    		</center>
+			    	</aside>
+			    </aside>
+			</div>
+		  </ul>
+		</nav>
+	  </nav>
+
+     <div class="sec">
+	   <section class="pan">
+	     <section class="fst">
+	       <section class="text">
+	         <p class="links"><a href=www.google.co.in>Fifa chief downplays US indictment</a></p>
+		     <div class="block">
+	           <blockquote>
+			     Re-elected Fifa president Sepp Blatter plays down US criminal proceedings launched against officials of world football's governing body.<br>
+				 <ul class="date">
+				   <li><img src=images/clock-15x15.png>30 May 2015
+				   <li class="vr"><a href="https://www.facebook.com/proLog4u">Europe</a>
+				   <li class="vr"><img src=images/blog.png>1596
+				 </ul>
+			   </blockquote>
+			   <hr class="sep">
+			   <div class="links">
+			     <img src=images/play.png class="play">
+			     <a href="page.html">Blatter 'should have resigned'</a><br>
+	             <a href="page.html">Ex-Man U chief rejects Fifa role</a><br>
+				 <a href="page.html">World Cup boycott?</a><br>
+				 <a href="page.html">Blatter's most notable quotes</a><br>
+			   </div>
+			 </div>
+		   </section>
+		   <section class="img"><img src=images/image.jpg></section>
+	       <div class="hd">
+	         <a href="https://www.google.co.in">
+	           Fifa investigation <img src="images/gt.png">
+	         </a>
+	       </div>
+	       <div class="abcd">
+	         <div>
+	           <img src="images/1.png">
+	           <a href="https://www.facebook.com/proLog4u">
+	             Russia decries Fifa 'conspiracy'
+	           </a>
+	         </div>
+	         <div>
+	           <img src="images/2.png">
+	           <a href="https://www.facebook.com/proLog4u">
+				 Corrupt official's globe-hopping blog
+	           </a>
+	         </div>
+	         <div>
+	           <img src="images/3.png">
+	           <a href="https://www.facebook.com/proLog4u">
+				 Fifa indictment: Key points
+	           </a>
+	         </div>
+	         <div>
+	           <img src="images/4.png">
+	           <a href="https://www.facebook.com/proLog4u">
+	             'God Bless America,' fans say
+	           </a>
+	         </div>
+	       </div>
+	       <div class="xyz">
+	         <div class="normal">
+	         	<img src="images/5.png">
+				<a href="https://www.facebook.com/proLog4u" class="hdng">Syria 'barrel bomb strikes kill 72'</a>
+				<p>At least 72 people have been killed in Syria's northern Aleppo province by barrel bombs dropped from government helicopters, activists say.</p>
+				<ul class="date">
+				  <li><img src="images/clock-15x15.png">30 May 2015
+				  <li class="vr"><a href="https://www.facebook.com/proLog4u">Middle East</a>
+				</ul>
+				<hr class="sep">
+				<a href="https://www.facebook.com/proLog4u">'Unthinkable atrocities' in Aleppo</a>
+				<a href="https://www.facebook.com/proLog4u">Syria crisis: An ending nears?</a>
+	         </div>
+	         <div class="normal">
+	         	<img src="images/6.png">
+	         	<span>SPORT</span>
+	         	<a href="https://www.facebook.com/proLog4u" class="hdng">Arsenal win record 12th FA Cup</a>
+				<p>Arsenal retain the FA Cup with a win over Aston Villa to become the most successful team in the competition's history.</p>
+				<ul class="date">
+				  <li><img src="images/clock-15x15.png">30 May 2015
+				  <li class="vr"><a href="https://www.facebook.com/proLog4u">Football</a>
+				</ul>
+				<hr class="sep">
+				<span id="two">LIVE</span>
+				<a href="https://www.facebook.com/proLog4u">FA Cup final - FT: Arsenal 4-0 Villa</a>
+	         </div>
+	         <div class="abnormal">
+	         	<div>
+	         	  <a href="https://www.facebook.com/proLog4u" class="hdng">Nigeria militants strike Maiduguri</a>
+				  <ul class="date">
+				    <li><img src="images/clock-15x15.png">30 May 2015
+				  	<li class="vr"><a href="https://www.facebook.com/proLog4u">Africa</a>
+				  </ul>
+				</div>
+				<div>
+				  <a href="https://www.facebook.com/proLog4u" class="hdng">Solar plane begins Pacific crossing</a>
+				  <ul class="date">
+				    <li><img src="images/clock-15x15.png">30 May 2015 &nbsp;
+				  	<li><a href="https://www.facebook.com/proLog4u">Science &amp; Environment</a>
+				  </ul>
+				</div>
+	         </div>
+	       </div>
+		 </section>
+	   </section>
+
+	   <article>
+		 <div class="h">
+		   <div class="head">
+		     <span>Watch/Listen</span>
+		     <p>
+		     	<img src="images/LIVE.png" class=live>
+		       	  World Service radio
+		     </p>
+		   </div>
+		   <div class="utube">
+		     <div>
+		       <img src="images/a.png">
+		       <div class="txt">
+		         <a href="https://www.facebook.com/proLog4u">
+		           Solar Impulse: Ready for Pacific flight
+		         </a>
+		         <img src="images/clock-15x15.png">
+		         <span>30 May 2015</span>
+		       </div>
+		     </div>
+		     <div>
+		       <img src="images/b.png">
+		       <div class="txt">
+		         <a href="https://www.facebook.com/proLog4u">
+			       Blatter defiant as he faces questions
+		         </a>
+		         <img src="images/clock-15x15.png">
+		         <span>30 May 2015</span>
+		       </div>
+		     </div>
+		     <div>
+		 	   <img src="images/c.png">
+		 	   <div class="txt">
+		 	     <a href="https://www.facebook.com/proLog4u">
+		 		   How Blatter charmed Africa
+		 	     </a>
+		 	     <img src="images/clock-15x15.png">
+		 	     <span>29 May 2015</span>
+		 	   </div>
+		     </div>
+		     <div>
+		 	   <img src="images/d.png">
+		 	   <div class="txt">
+		 	     <a href="https://www.facebook.com/proLog4u">
+		     	   Splashdown for tightrope competitor
+		 	     </a>
+		 	     <img src="images/clock-15x15.png">
+		 	     <span>30 May 2015</span>
+		 	   </div>
+		     </div>
+		     <div>
+		 	   <img src="images/e.png">
+		 	   <div class="txt">
+		 	     <a href="https://www.facebook.com/proLog4u">
+		 		   One World Observatory opens to public
+		 	     </a>
+		 	     <img src="images/clock-15x15.png">
+		 	     <span>30 May 2015</span>
+		 	   </div>
+		     </div>
+		     <div>
+		 	   <img src="images/f.png">
+		 	   <div class="txt">
+		 	   	 <a href="https://www.facebook.com/proLog4u">
+		    	   Napoleon's life in Lego for anniversary
+		 	     </a>
+		 	     <img src="images/clock-15x15.png">
+		 	     <span>30 May 2015</span>
+		 	   </div>
+		     </div>
+		   </div>
+		 </div>
+		 <div class="share">
+		 	<div class="head">Share with BBC News <img src="images/gt.png"></div>
+		 </div>
+	   </article>
+	 </div>
+   </td></tr></table>
+  </body>
+</html>
