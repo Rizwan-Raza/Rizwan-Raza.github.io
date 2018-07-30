@@ -1,0 +1,443 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Segoe UI', arial;
+}
+nav, #main {
+	display: inline;
+	color: white;
+	text-transform: uppercase;
+}
+nav {
+	width: 180px;
+	position: fixed;
+	height: 100%;
+	float: left;
+	background-color: #6d1b27;
+}
+nav ul {
+	margin-top: 85px;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 0px;
+}
+nav ul li:hover {
+	font-weight: bold;
+	background-color: #861a29;
+}
+nav ul li {
+	list-style: none;
+	padding: 8px 20px;
+	border-bottom: 1px solid gray;
+}
+nav ul a:first-child li {
+	border-top: 1px solid gray;
+}
+nav ul a {
+	color: white;
+	text-decoration: none;
+}
+nav ul a:hover {
+	text-decoration: none;
+}
+body > div {
+	float: left;
+	margin-left: 180px;
+}
+#home {
+	display: inline;
+	float: left;
+}
+#home > div {
+	/*display: inline;*/
+	float: left;
+	height: 650px;
+}
+.ui-home-left {
+	width: 45%;
+	background-color: #861a29;
+	margin-right: -2px;
+	border-left: 2px solid #00aa9d;
+}
+.ui-home-right {
+	width: 55%;
+	overflow: hidden;
+}
+button {
+	border: none;
+	color: white;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-family: 'Segoe UI', arial;
+}
+.ui-home-left button:first-child {
+	transition: 0.8s;
+	width: 36px;
+	background-color: white;
+	height: 20px;
+}
+.ui-home-left button:first-child:hover {
+	background-color: #00aa9d;
+}
+.ui-home-left > div {
+	padding: 30px 40px;
+}
+.ui-home-left .ui-moto {
+	padding: 5px 30px;
+	font-size: 16px;
+	background-color: #85313f;
+	font-weight: bold;
+}
+.ui-home-left .ui-moto:hover {
+	box-shadow: 5px 5px 15px #000000;
+	background-color: #6d1b27;
+}
+.ui-home-left h1 {
+	font-size: 80px;
+	font-weight: bold;
+	letter-spacing: 5px;
+	color: white;
+	text-transform: uppercase;
+	margin: 30px 0px;
+}
+.ui-home-left .ui-action {
+	color: white;
+	font-size: 32px;
+	font-weight: bold;
+	padding: 30px 45px 30px 15px;
+	background-color: #85313f;
+}
+.ui-home-left .ui-action:hover {
+	background-color: #6d1b27;
+}
+button hr {
+	margin: 3px 0px;
+	border-color: #00aa9d;
+	border-style: solid;
+}
+button:hover hr {
+	border-color: white;
+}
+.ui-home-left div > div {
+	position: relative;
+	top: -115px;
+	left: 48px;
+	width: 90px;
+	height: 40px;
+	background-color: #861a29;
+}
+.ui-home-left .first {
+	transform: rotate(45deg);
+}
+.ui-home-left .last {
+	top: -70px;
+	transform: rotate(-45deg);
+}
+.ui-home-right img {
+	width: 50%;
+	display: inline;
+	float: left;
+	margin: -1px;
+	border: 1px solid #6d1b27;
+}
+#about {
+	text-align: center;
+	text-transform: uppercase;
+}
+#about div {
+	margin: 10px 90px;
+}
+#about img {
+	display: block;
+	margin: 0px auto;
+}
+#about h1 {
+	font-size: 64px;
+	letter-spacing: 10px;
+	margin: 20px;
+}
+#about h2 {
+	margin: 20px;
+	font-size: 48px;
+	font-weight: normal;
+	font-family: 'Segoe UI';
+	border-top: 1px solid #6d1b27;
+	border-bottom: 1px solid #6d1b27;
+	letter-spacing: 3px;
+}
+#about h2 span {
+	color: #6d1b27;
+	margin: 0px;
+}
+#about h3 {
+	margin: 0px 0px 20px 0px;
+	font-size: 28px;
+	color: #B0B0B0;
+	font-weight: normal;
+}
+#about h3 + hr {
+	width: 40%;
+	height: 16px;
+	border: none;
+	border-radius: 8px;
+	background-color: #D0D0D0;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+#about button {
+	background-color: black;
+	color: white;
+	text-transform: uppercase;
+	font-size: 16px;
+	padding: 30px 150px;
+	margin: 50px 0px 30px 0px;
+}
+#services {
+	background-color: #202020;
+	color: white;
+	text-align: center;
+	overflow: hidden;
+}
+#services > div {
+	margin: 0px 90px;
+}
+#services h1 {
+	font-size: 36px;
+	text-transform: uppercase;
+}
+hr.ui-sm-maroon {
+	border: none;
+	width: 10%;
+	height: 15px;
+	background-color: #861a29;
+}
+#services h2 {
+	font-family: 'Segoe UI Light', arial;
+	font-weight: normal;
+	font-size: 24px;
+	text-align: center;
+}
+#services h2 ~ hr, #contact h2 ~ hr {
+	margin-top: 1px;
+	margin-bottom: 0px;
+	height: 1px;
+	padding: 0px;
+	color: gray;
+	border-style: dotted;
+}
+#services .container {
+	margin-top: 50px;
+	display: block;
+}
+#services .section {
+	float: left;
+	width: 25%;
+	height: 280px;
+}
+#services .section div {
+	margin: 0px auto;
+	width: 150px;
+	height: 150px;
+	border-radius: 100px;
+	background-color: white;
+	border:20px solid #6d1b27;
+}
+#services .section div hr {
+	display: inline;
+}
+#services .container .section div img {
+	margin-top: 40px;
+}
+#digital {
+	color: white;
+	background-color: #861a29;
+	text-align: center;	
+	padding: 10px 0px 30px 0px;
+	position: relative;
+}
+#services .section > div:hover {
+	cursor: pointer;
+}
+#digital #pointer {
+	transform: rotate(45deg);
+	height: 50px;
+	width: 50px;
+	background-color: #861a29;
+	position: absolute;
+	top: -25px;
+	left: 8%;
+}
+#digital > div {
+	margin: 0px 92px;
+}
+#digital h1 {
+	text-transform: uppercase;
+	font-size: 36px;
+}
+#digital h2 {
+	font-family: 'Segoe UI Light', arial;
+	/*font-weight: normal;*/
+}
+#digital button {
+	background-color: black;
+	color: white;
+	font-size: 16px;
+	padding: 10px 30px;
+	margin: 20px;
+}
+#team {
+	text-align: center;	
+}
+#team > div {
+	margin: 0px 92px;
+}
+#team h1 {
+	text-transform: uppercase;
+	font-size: 36px;
+}
+#team h2 {
+	font-family: 'Segoe UI Light', arial;
+	font-size: 21px;
+	text-align: center;
+}
+}
+#team button {
+	background-color: black;
+	color: white;
+	font-size: 16px;
+	padding: 10px 30px;
+	margin: 20px;
+}
+#team .person-holder .person {
+	width: 25%;
+	height: 550px;
+	float: left;
+	/*background-color: red;*/
+}
+.person h2 {
+	font-weight: normal;
+	margin: 0px;
+}
+.person button {
+	font-size: 12px;
+	border: 1px solid black;
+	color: black;
+	background-color: #F0F0F0;
+	padding: 5px;
+	margin: 10px;
+}
+.person button:hover {
+	background-color: white;
+}
+.person p {
+	font-size: 12px;
+	color: #404040;
+	margin: 0px;
+}
+.person div {
+	padding: 20px 10px 10px 10px;
+	background-color: #F0F0F0;
+	border-bottom: 3px solid black;
+	margin: 0px 40px;
+}
+.person hr {
+	width: 24%;
+	height: 5px;
+}
+.person img {
+	margin: 5px;
+}
+#portfolio h1 {
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0px;
+	font-weight: normal;
+	letter-spacing: 8px;
+	color: #851a2a;
+	font-size: 40px;
+}
+#portfolio img {
+	width: 100%;
+}
+#contact > div {
+	margin: -5px 80px;
+	padding-bottom: 20px;
+}
+#contact {
+	color: white;
+	text-align: center;
+	background-color: #404040;
+}
+#contact h1 {
+	padding-top: 20px;
+	margin: 0px;
+	text-transform: uppercase;
+	font-size: 36px;
+}
+#contact h2 {
+	font-weight: lighter;
+	font-family: 'Segoe UI Light'
+}
+#contact form {
+	height: 200px;
+}
+#contact form > div {
+	float: left;
+	padding-top: 40px;
+}
+#contact form input, #contact form textarea, #contact form button {
+	border: 2px solid gray;
+	background-color: #404040;
+	color: #D0D0D0;
+	font-family: 'Segoe UI Light', arial;
+	font-size: 20px;
+	height: 100px;
+	width: 85%;
+	float: left;
+	padding: 10px;
+	resize: none;
+}
+#contact form input:last-child {
+	margin-top: 26px;
+}
+#contact form button {
+	font-size: 24px;
+	border-radius: 100%;
+	text-transform: none;
+	width: 100px;
+	height: 100px;
+	padding: 0px;
+}
+#contact form input {
+	height: 25px;
+}
+#contact form > div:first-child {
+	width: 35%;
+}
+#contact form > div:nth-child(2) {
+	width: 50%;
+}
+#contact form > div:last-child {
+	width: 15%;
+}
+footer {
+	background-color: #212528;
+	color: white;
+	font-weight: bold;
+}
+footer div {
+	line-height: 80px;
+	margin: 0px 20px;
+	padding: 10px 0px;
+}
+footer a {
+	text-decoration: none;
+	color: #8080ff;
+}
+footer a:hover {
+	text-decoration: underline;
+}
+footer img {
+	margin: 10px;
+	float: right;
+}

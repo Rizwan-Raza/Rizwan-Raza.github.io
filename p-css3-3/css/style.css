@@ -1,0 +1,437 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Segoe UI',arial;
+}
+div, nav, header, section, footer {
+	box-sizing: border-box;
+}
+#nav-sm {
+	width: 100%;
+	padding: 8px 50px;
+	background-color: #202020;
+	color: #d0d0d0;
+}
+#nav-sm nav, footer nav{
+	display: inline;
+}
+#nav-sm nav ul , footer nav ul {
+	display: inline;
+	margin: 0px;
+	padding: 0px;
+}
+#nav-sm li, footer li{
+	list-style: none;
+	display: inline;
+	padding: 8px 10px;
+	cursor: pointer;
+}
+#nav-sm li:hover, footer li:hover{
+	color: white;
+	background-color: #303030;
+}
+#nav-sm .right {
+	display: inline;
+	float: right;
+	overflow: auto;
+}
+#nav-sm .right > div {
+	display: inline;
+	float: left;
+	margin: 5px 3px;
+	height: 12px;
+	width: 12px;
+	cursor: pointer;
+	background-color: red;
+}
+#nav-sm .right > div#red {
+	background: linear-gradient(#d00000,#700000);
+}
+#nav-sm .right > div#green {
+	background: linear-gradient(#00d000,#007000);
+}
+#nav-sm .right > div#blue {
+	background: linear-gradient(#0000d0,#000070);
+}
+#nav-sm .right > div#orange {
+	background: linear-gradient(#d07000,#703800);
+}
+#nav-sm .right > div#voilet {
+	background: linear-gradient(#7000d0,#380070);
+}
+#nav-sm .right > div#gray {
+	background: linear-gradient(#D0D0D0,#707070);
+}
+body > nav {
+	padding: 10px 50px;
+	z-index: 20;
+	width: 100%;
+	height: auto;
+	float: left;
+	clear: both;
+	background: linear-gradient(white,#EEEEEE);
+}
+body > nav > div {
+	display: inline;
+	float: left;
+	text-transform: uppercase;
+}
+h1,h2,h3,h4,h5 {
+	padding: 0px;
+	margin: 0px;
+}
+body > nav > div:first-child h1{
+	font-size: 54px;
+	color: #A00000;
+}
+body > nav > div:nth-child(2) {
+	padding: 12px;
+}
+body > nav > div:nth-child(2) h2 {
+	line-height: 32px;
+	font-size: 32px;
+	color: #A00000;
+	letter-spacing: 16px;
+}
+body > nav > div:nth-child(2) h3 {
+	line-height: 16px;
+	font-size: 16px;
+	letter-spacing: normal;
+	text-transform: none;
+	color: gray;
+}
+body > nav > div:last-child {
+	margin: 20px 0px;
+	float: right;
+}
+body > nav > div > ul {
+	display: inline;
+}
+body > nav > div > ul a {
+	text-decoration: none;
+}
+body > nav > div > ul li {
+	display: inline;
+	padding: 8px 20px;
+	border-radius: 5px;
+	color: #606060;
+	font-weight: bold;
+	font-size: 20px;
+	text-transform: none;
+	margin: 10px;
+	cursor: pointer;
+}
+body > nav > div > ul li:hover {
+	background-color: #606060;
+	color: white;
+}
+body > nav > div > ul li.selected {
+	background-color: #A00000;
+	color: white;
+}
+header {
+	float: left;
+	clear: both;
+	background-color: #A00000;
+	width: 100%;
+	height: auto;
+	position: relative;
+	z-index: -1;
+}
+header > div {
+	display: inline;
+	float: left;
+}
+header div.prev, header div.next {
+	width: 50px;
+	z-index: -20;	
+}
+header div.container {
+	background-color: #A00000;
+	z-index: 10;
+	height: auto;
+	margin: 0px 50px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.075) inset, 0 0 50px rgba(100, 0, 0, 0.6);
+	color: #EEEEEE;
+}
+header div.prev > div, header div.next > div {
+	cursor: pointer;
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	background-color: #EEEEEE;
+	border-radius: 50%;
+	top: 50%;
+	margin-top: -50px;
+	border: 1px solid #404040;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.075) inset, 0 0 10px rgba(100, 0, 0, 0.6);
+	z-index: -1;
+}
+header div.next > div {
+	right: 0px;
+}
+.container > div {
+	display: inline;
+	float: left;
+}
+.container .image {
+	width: 36%;
+	padding: 20px;
+}
+.container .image img {
+	max-width: 100%;
+	max-height: 100%;
+}
+.container .text {
+	width: 64%;
+	padding: 20px 80px 20px 20px;
+}
+.container .text h1 {
+	font-size: 72px;
+}
+.container .text p {
+	font-size: 18px;
+}
+.container .text button {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 24px;
+	padding: 3px 8px 3px 20px;	
+	border-radius: 18px;
+	border: 1px solid #EEEEEE;
+	color: #A00000;
+	background: linear-gradient(#FFFFFF,#C0C0C0);
+	cursor: pointer;
+}
+.container .text button:hover {
+	background: linear-gradient(#C0C0C0,#FFFFFF);
+}
+.container .text button i.fa {
+	font-size: 24px;
+	vertical-align: sub;
+}
+.prev:hover i, .next:hover i {
+	color: black;
+}
+.prev i, .next i {
+	margin: 32px 0px;
+	font-size: 36px;
+	color: gray;
+}
+.prev i {
+	margin-left: 12px;
+}
+.next i {
+	margin-left: 60px;	
+}
+section#menu-items {
+	float: left;
+	clear: both;
+	padding: 0px 50px;
+	width: 100%;
+	background-color: #000;
+}
+section#menu-items > div {
+	display: inline;
+	width: 33.33%;
+	height: 100%;
+	float: left;
+	padding: 20px 10px 10px 10px;
+	color: #606060;
+}
+section#menu-items > div > div {
+	display: inline;
+	float: left;
+}
+section#menu-items > div > div.image {
+	padding-right: 10px;
+	width: 25%;
+}
+section#menu-items > div > div.image img{
+	max-width: 100%;
+	max-height: 100%;
+}
+section#menu-items > div > div.text {
+	display: inline;
+	padding-left: 10px;
+	width: 75%;
+}
+section#menu-items > div > div.text h5 {
+	color: #808080;
+	text-transform: uppercase;
+}
+section#body {
+	padding: 20px 50px;
+	float: left;
+	clear: both;
+	background: linear-gradient(#d0d0d0 ,#FFFFFF 50px);
+}
+section#body > div {
+	display: inline;
+	float: left;
+}
+section#body div.left {
+	width: 67%;
+	margin-bottom: 20px;
+}
+section#body div.right {
+	width: 33%;
+}
+section#body div.left div.first {
+	padding-right: 20px;
+}
+section#body div.left h1 {
+	padding: 0px 0px 10px 0px;
+	color: #808080;
+}
+section#body div.left button {
+	background-color: #A00000;
+	color: white;
+	border: none;
+	padding: 5px 10px;
+}
+section#body div.left img {
+	max-width: 100%;
+	max-height: 100%;
+}
+section#body div.row > div.col {
+	padding: 5px 7px;
+	display: inline;
+	float: left;
+	width: 50%;	
+}
+section#body div.left div.row > div {
+	padding: 36px 25px 0px 0px;
+}
+.left .row > div > p {
+	margin: 0px 10px 10px 0px;
+}
+.left .row > div > img {
+	float: left;
+	padding: 0px 10px 10px 0px;
+	width: 66%;
+}
+section {
+	background-color: red;
+	/*margin-bottom: 50px;*/
+}
+section#body div.right div.heading {
+	background-color: black;
+	color: white;
+	padding: 5px 10px;
+	text-transform: uppercase;
+}
+section#body div.right div.content {
+	padding: 10px;
+	background: linear-gradient(#d0d0d0 ,#FFFFFF 50px);
+	float: left;
+	width: 100%;
+}
+section#body div.right div.content img {
+	max-width: 100%;
+	max-height: 100%;
+}
+.col-1-3, .col-3-3 {
+	width: 10%;
+	display: inline;
+	float: left;
+	clear: both;
+}
+.col-2-3 {
+	padding: 10px 0px;
+	width: 80%;
+	display: inline;
+	float: left;
+}
+.col-3-3 {
+	float: right;
+}
+section#body div.right div.content span {
+	color: #A00000;
+	font-weight: bold;
+}
+.right .box .content img.mail {
+	width: 30%;
+	float: left;
+	padding: 0px 10px 10px 0px;
+}
+section#bottom {
+	background-color: #202020;
+	float: left;
+	clear: both;
+	padding: 10px 40px;
+	color: #D0D0D0;
+	width: 100%;
+}
+section#bottom div.row > div {
+	width: 25%;
+	display: inline;
+	float: left;
+	padding: 10px;
+}
+section#bottom div.row > div h1 {
+	color: #D0D0D0;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+section#bottom div.row > div h4 {
+	color: #D0D0D0;
+	font-size: 16px;
+}
+section#bottom div.row > div img {
+	margin: 5px 0px;
+	max-width: 100%;
+	min-height: 100%;
+}
+section#bottom div.row > div p {
+	margin: 10px 0px;
+	padding: 0px;
+}
+footer {
+	padding: 0px 50px;
+	background-color: #101010;
+	color: #D0D0D0;
+	float: left;
+	width: 100%;
+}
+footer nav {
+	margin: 18px 0px;
+	float: right;
+	width: 40%;
+	font-size: 15px;
+}
+footer nav ul {
+	float: right;
+}
+footer div {
+	display: inline;
+	float: left;
+	width: 60%;
+	line-height: 25px;
+	font-size: 14px;
+}
+nav ul a {
+	color: #D0D0D0;
+}
+nav ul a:hover {
+	text-decoration: none;
+}
+a {
+	color: #A00000;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+@media screen and (max-width: 1180px) {
+	footer nav , footer div {
+		width: 100%;
+		float: left;
+	}
+	footer nav {
+		margin-top: 0px;
+	}
+}
+img {
+	width: 100%;
+}

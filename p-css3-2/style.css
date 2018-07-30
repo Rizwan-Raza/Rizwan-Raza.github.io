@@ -1,0 +1,263 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Segoe UI',arial;
+}
+div[role="styling"] {
+	position: fixed;
+	height: 60px;
+	width: 100%;
+	z-index: -10;
+}
+div.container {
+	margin: 50px 50px 0px 50px;
+}
+#start {
+	top: 0px;
+	background: linear-gradient(#d5e493, white);
+}
+#end {
+	bottom: 0px;
+	background: linear-gradient(white, #d5e493);
+}
+header {
+	margin: 10px 10px 40px 10px;
+	overflow: auto;
+}
+header div {
+	display: inline;
+	float: left;
+}
+header div.left {
+	width: 72px;
+}
+header div div.inner {
+	margin: 0px 10px;
+}
+header div.left div.inner img {
+	width: 64px;
+	float: right;
+}
+header h1 {
+	display: inline;
+	font-size: 40px;
+	margin: 10px 0px;
+	line-height: 40px;
+	color: #aec843;
+}
+header small {
+	display: block;
+	color: #808080;
+	font-weight: bold;
+}
+section.slogan div.left {
+	width: 45%;
+}
+section.slogan div.right {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	width: 55%;
+	height: 360px;
+	overflow: auto;
+}
+section.slogan img {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	max-height: 100%;
+	max-width: 100%;
+}
+section.slogan {
+	background: linear-gradient(135deg, #78a800 0%,#9dc600 33%,#78a800 100%);
+	position: relative;
+	padding: 10px 40px;
+	color: #f7ffeb;
+}
+section.slogan h1 {
+	border-bottom: 1px solid #aecf02;
+}
+section.slogan p, section.slogan h4 {
+	margin: 5px 0px;
+}
+a {
+	color: #b6e30e;
+}
+a:hover {
+	color: #a6cc0e;
+}
+.slogan a:hover {
+	color: #d6fc3e;
+}
+nav {
+	background: linear-gradient(#f59524 48%, #f58400 52%);
+}
+nav ul {
+	text-align: center;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+nav ul li {
+	list-style: none;
+	display: inline;
+	padding: 10px 0px;
+	border-right: 1px solid orange;
+}
+nav ul li a {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fff1d4;
+	text-decoration: none;
+	padding: 10px 15px 10px 25px;
+	position: relative;	
+}
+nav ul li a div {
+	display: inline;
+	position: absolute;
+	left: 0px;
+	height: 12px;
+	margin: 5px 10px;
+	width: 12px;
+	background-image: url("images/chevron.png");
+	background-size: 24px 12px;
+}
+nav ul li:first-child {
+	border-left: 1px solid orange;	
+}
+nav ul li:hover {
+	background: linear-gradient(#f58400 48%, #f59524 52%);
+	border-bottom: 4px solid #b6e30e;
+	padding-bottom: 6.25px;
+}
+nav ul li a:hover {
+	color: white;
+}
+nav ul li a img {
+	margin: 0px 4px;
+	height: 12px;
+	width: 12px;
+}
+section.about {
+	margin: 10px 20px;
+	overflow: auto;
+}
+section.about > div {
+	display: inline;
+	float: left;
+}
+section.about div.left {
+	width: 66%;
+}
+section.about div.right {
+	width: 34%;
+}
+section.about div div.main {
+	margin: 20px;
+	overflow-x: visible;
+}
+section.about div div.main div.head h1 {
+	margin: 0px;
+	padding-left: 24px;
+	font-size: 36px;
+	font-weight: normal;
+	border-bottom: 1px solid #a0a0a0;
+	box-shadow: 0px 1px 0px #f0f0f0;
+	color: orange;
+	position: relative;
+}
+section.about div div.main div.head h1 div {
+	height: 20px;
+	width: 20px;
+	display: inline;
+	position: absolute;
+	left: 0px;
+	background-image: url(images/chevron.png);
+	background-position: 20px 0px;
+	background-size: 40px 20px;
+	margin: 18px 0px;
+}
+section.about div.left div.main div.body, section.about div.right div.main div.body {
+	padding: 20px 0px;
+	overflow: auto;
+}
+section.about div.left div.main div.body div.img {
+	width: 30%;
+}
+section.about div.left div.main div.body div{
+	display: inline;
+	float: left;
+}
+section.about div div.main div.body img {
+	width: 100%;
+}
+section.about div.left div.main div.body div.text {
+	width: 70%;
+}
+div.left div.img div.inner {
+	margin: 10px 20px 0px 0px;
+	width: 100%;
+}
+div.left div.text div.inner {
+	margin: 10px 30px 0px 30px;
+}
+div.left div.text div.inner h4 ,div.right h4 {
+	margin: 0px;
+}
+div.left div.text div.inner p , div.right p{
+	margin-top: 0px;
+}
+
+section.about div.left div.main div.body div.links {
+	width: 40%;
+}
+section.about div.left div.main div.body div.rem {
+	width: 60%;
+}
+div.left div.rem div.inner {
+	margin: 10px 30px 10px 20px;
+}
+div.left div.rem div.inner h4 {
+	margin: 0px;
+}
+div.left div.rem div.inner p{
+	margin-top: 0px;
+}
+div.left div.links div.inner ul {
+	margin: 10px 0px;
+	-webkit-padding-start: 20px;
+	color: #b6e30e;
+}
+section.about div.right div.body img {
+	margin: 15px 0px 20px 0px;
+}
+section.about button {
+	padding: 3px 15px;
+	background: linear-gradient(white , #c0c0c0 30%,white);
+	border: 1px solid gray;
+	border-radius: 4px;
+	font-weight: bold;
+}
+section.about button:hover {
+	cursor: pointer;
+	background: linear-gradient(white , #c0c0c0 60%,white);
+}
+section.divider {
+	height: 40px;
+	background: linear-gradient(#f59524 48%, #f58400 52%);
+}
+footer {
+	margin: 30px 40px;
+	padding: 0px 0px 10px 0px;
+}
+footer div {
+	display: inline;
+}
+footer div.footer-links {
+	float: left;
+	font-weight: bold;
+	color: #b6e30e;
+}
+footer div.footer-content {
+	float: right;
+}

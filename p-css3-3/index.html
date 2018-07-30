@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> CSS3 - Project - 3 </title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript">
+		var currentColor = "#A00000";
+		$(document).ready(function() {
+			$('.prev').click(function() {
+				if (currentColor == "gray") {
+					changeColor("#7a33b7");
+				} else if (currentColor == "#7a33b7") {
+					changeColor("#d07000");
+				} else if (currentColor == "#d07000") {
+					changeColor("#337ab7");
+				} else if (currentColor == "#337ab7") {
+					changeColor("#80C000");
+				} else if (currentColor == "#80C000") {
+					changeColor("#A00000");
+				} else if (currentColor == "#A00000") {
+					changeColor("gray");
+				} else {
+					changeColor("#D8D800");
+				}
+			});
+			$('.next').click(function() {
+				if (currentColor == "#A00000") {
+					changeColor("#80C000");
+				} else if (currentColor == "#80C000") {
+					changeColor("#337ab7");
+				} else if (currentColor == "#337ab7") {
+					changeColor("#d07000");
+				} else if (currentColor == "#d07000") {
+					changeColor("#7a33b7");
+				} else if (currentColor == "#7a33b7") {
+					changeColor("gray");
+				} else if (currentColor == "gray") {
+					changeColor("#A00000");
+				} else {
+					changeColor("#D8D800");
+				}
+			});
+		});
+		function changeColor(color) {
+			$('[chngtxtclr]').css('color',color);
+			$('[chngbgclr]').css('background-color',color);
+			$('.read-more').css('background-color',color);
+			currentColor = color;
+		}
+	</script>
+</head>
+<body>
+<div id="nav-sm">
+	<nav>
+		<ul>
+			<a href="#body"><li>About Joomla!</li></a>
+			<a href="#menu-items"><li>Features</li></a>
+			<a href="#bottom"><li>News</li></a>
+			<a href="#home"><li>The Community</li></a>
+		</ul>
+	</nav>
+	<div class="right">
+		<div id="red" onclick="changeColor('#A00000')"></div>
+		<div id="green" onclick="changeColor('#80C000')"></div>
+		<div id="blue" onclick="changeColor('#337ab7')"></div>
+		<div id="orange" onclick="changeColor('#d07000')"></div>
+		<div id="voilet" onclick="changeColor('#7a33b7')"></div>
+		<div id="gray" onclick="changeColor('gray')"></div>
+	</div>
+</div>
+<nav>
+	<div><h1 chngtxtclr>Shaper</h1></div>
+	<div><h2 chngtxtclr>Design</h2><h3>we create quality websites</h3></div>
+	<div>
+		<ul>
+			<a href="#home"><li class="selected" chngbgclr>Home</li></a>
+			<a href="#body"><li>Features</li></a>
+			<a href="#menu-items"><li>Menu Items</li></a>
+			<a href="#"><li>Joomla!</li></a>
+		</ul>
+	</div>
+</nav>
+<header id="home" chngbgclr>
+	<div class="prev"><div><i class="fa fa-chevron-left"></i></div></div>
+	<div class="container" chngbgclr>
+		<div class="image"><img src="img/slider.png"></div>
+		<div class="text">
+			<h1>Innovative Design</h1>
+			<p>Nowadays, building an online web presence can greatly contribute a lot to the success of every bussiness. It doesn&apos;t</p>
+			<button chngtxtclr>Read Detail Story <i class="fa fa-plus-circle"></i></button>
+		</div>
+	</div>
+	<div class="next"><div><i class="fa fa-chevron-right"></i></div></div>
+</header>
+<section id="menu-items">
+	<div>
+		<div class="image"><img src="img/bucket.png"></div>
+		<div class="text">
+			<h5>Web Design &amp; Developmemnt</h5>
+			<p>Website design and developed with CSS, HTML, XHTML, JS, AJAX etc.</p>
+		</div>
+	</div>
+	<div>
+		<div class="image"><img src="img/cart.png"></div>
+		<div class="text">
+			<h5>Web Design &amp; Developmemnt</h5>
+			<p>Website design and developed with CSS, HTML, XHTML, JS, AJAX etc.</p>
+		</div>
+	</div>
+	<div>
+		<div class="image"><img src="img/joomla.png"></div>
+		<div class="text">
+			<h5>Web Design &amp; Developmemnt</h5>
+			<p>Website design and developed with CSS, HTML, XHTML, JS, AJAX etc.</p>
+		</div>
+	</div>
+</section>
+<section id="body">
+	<div class="left">
+		<div class="first">
+			<h1>Welcome to Joom Design</h1>
+			<img src="img/banner.png">
+			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
+			<button class="read-more" chngbgclr> Read More...</button>
+		</div>
+		<div class="row">
+			<div class="col">
+				<h1>Welcome to Joom Design</h1>
+				<img src="img/11.png">
+				<p> Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery of type and scrambled it to make a type speciman book. It has survived not only five centuries.</p>
+				<button class="read-more"> Read More...</button>
+			</div>
+			<div class="col">
+				<h1>Welcome to Joom Design</h1>
+				<img src="img/12.png">
+				<p> Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery of type and scrambled it to make a type speciman book. It has survived not only five centuries.</p>
+				<button class="read-more"> Read More...</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<h1>Welcome to Joom Design</h1>
+				<img src="img/13.png">
+				<p> Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery of type and scrambled it to make a type speciman book. It has survived not only five centuries.</p>
+				<button class="read-more"> Read More...</button>
+			</div>
+			<div class="col">
+				<h1>Welcome to Joom Design</h1>
+				<img src="img/14.png">
+				<p> Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery of type and scrambled it to make a type speciman book. It has survived not only five centuries.</p>
+				<button class="read-more"> Read More...</button>
+			</div>
+		</div>
+	</div>
+	<div class="right">
+		<div class="box">
+			<div class="heading"> Our Works </div>
+			<div class="content">
+				<div class="row">
+					<div class="col">
+						<img src="img/21.png">
+					</div>
+					<div class="col">
+						<img src="img/22.png">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<img src="img/23.png">
+					</div>
+					<div class="col">
+						<img src="img/24.png">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<img src="img/25.png">
+					</div>
+					<div class="col">
+						<img src="img/26.png">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<img src="img/27.png">
+					</div>
+					<div class="col">
+						<img src="img/28.png">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="heading"> Client Testimonials </div>
+			<div class="content">
+				<div class="row">
+					<div class="col-1-3"><i class="fa fa-quote-left"></i></div>
+					<div class="col-2-3">
+						<i>
+							It is along established fact that a reader distracted by readable content of a looking at its layout. The point of using is that it has a more-or-less normal
+							<br><br>
+							<b>Kowshar</b>
+						</i>						
+					</div>
+					<div class="col-3-3"><i class="fa fa-quote-right"></i></div>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="heading"> About Us </div>
+			<div class="content">
+				<img src="img/envelope.png" class="mail">
+				<a href="#"><span chngtxtclr>JoomXpert Solutions</span></a> is a joomla based web design company. We specilaize in providing professional design solutions to small to mediam sized businesses.
+				<br><br>
+				<b>Add:</b> Dhanmondi, Dhaka - 1209, Bangladesh
+				<br><br>
+				<b>Tel:</b> +8801740937068
+			</div>
+		</div>
+		<div class="box">
+			<div class="heading"> Who&apos;s Online </div>
+			<div class="content">
+				We have 7 guests online
+			</div>
+		</div>
+	</div>
+</section>
+<section id="bottom">
+	<div class="row">
+		<div class="col">
+			<h1>Our Portifolio</h1>
+			<img src="img/31.png">
+			<h4>Sample work 1</h4>
+			<p>Lorem ipsum is simply dummy text of the printing and typesetting.</p>
+			<img src="img/32.png">
+			<h4>Sample work 1</h4>
+			<p>Lorem ipsum is simply dummy text of the printing and typesetting.</p>
+		</div>
+		<div class="col">
+			<h1>Our Portifolio</h1>
+			<img src="img/33.png">
+			<h4>Sample work 1</h4>
+			<p>Lorem ipsum is simply dummy text of the printing and typesetting.</p>
+			<img src="img/34.png">
+			<h4>Sample work 1</h4>
+			<p>Lorem ipsum is simply dummy text of the printing and typesetting.</p>
+		</div>
+		<div class="col">
+			<h1>Our Portifolio</h1>
+			<img src="img/35.png">
+			<h4>Sample work 1</h4>
+			<p>Lorem ipsum is simply dummy text of the printing and typesetting.</p>
+			<img src="img/36.png">
+			<h4>Sample work 1</h4>
+			<p>Lorem ipsum is simply dummy text of the printing and typesetting.</p>
+		</div>
+		<div class="col">
+			<h1>Our Portifolio</h1>
+			<img src="img/37.png">
+			<h4>Sample work 1</h4>
+			<p>Lorem ipsum is simply dummy text of the printing and typesetting.</p>
+			<img src="img/38.png">
+			<h4>Sample work 1</h4>
+			<p>Lorem ipsum is simply dummy text of the printing and typesetting.</p>
+		</div>
+	</div>
+</section>
+<footer>
+	<div>
+		<p>Copyright &copy; 2016 Joom Design Demo. All rights reserved | Powered by <a href="#" chngtxtclr>Joomla!</a>. Valid <a href="#" chngtxtclr> HTML </a> and <a href="#" chngtxtclr> CSS </a><br>
+		Designed by <a href="http://rraza.blogspot.in" chngtxtclr> Rizwan </a></p>
+	</div>
+	<nav>
+		<ul>
+			<a href="#body"><li>About Joomla!</li></a>
+			<a href="#menu-items"><li>Features</li></a>
+			<a href="#bottom"><li>News</li></a>
+			<a href="#home"><li>The Community</li></a>
+			<a href="#"><li><i class="fa fa-arrow-up"></i> Top</li></a>
+		</ul>
+	</nav>
+
+</footer>
+</body>
+</html>
