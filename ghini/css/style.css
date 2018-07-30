@@ -1,0 +1,639 @@
+@font-face{
+	font-family:'Roboto-Thin';
+	src:url('../fonts/Roboto-Thin.ttf');
+	font-weight:normal;
+	font-style:normal
+}
+@font-face{
+	font-family:'Roboto-Regular';
+	src:url('../fonts/Roboto-Regular.ttf');
+	font-weight:normal;
+	font-style:normal
+}
+@font-face{
+	font-family:'Roboto-Black';
+	src:url('../fonts/Roboto-Black.ttf');
+	font-weight:normal;
+	font-style:normal
+}
+@font-face{
+	font-family:'Roboto-Light';
+	src:url('../fonts/Roboto-Light.ttf');
+	font-weight:normal;
+	font-style:normal
+}
+.navbar {
+	background-color: rgba(0, 0, 0, 0.75);
+	padding: 24px;
+}
+.navbar-logo {
+	margin: -24px;
+}
+.nav {
+	font-size: 18px;
+	text-transform: uppercase;
+	font-family: 'Segoe UI Light';
+}
+.navbar-inverse .navbar-nav>li>a {
+	color: #fff;
+	border-bottom: 0px solid #ddb321;
+	border-radius: 100%;
+}
+.navbar-inverse .navbar-nav:first-child>li>a:hover {
+	border-bottom: 1px solid #ddb321;
+	transition: all ease 200ms;
+	border-radius: 0;
+}
+.navbar-inverse .navbar-nav.navbar-right>li>a:hover {
+	transition: all ease 200ms;
+	color: #808080;
+}
+video {
+    display: block;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*height: 100%;*/
+    background-color: #000;
+}
+.carousel-top {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.carousel-top .carousel-top-nav {
+    list-style: none;
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    z-index: 10;
+}
+.carousel-top .carousel-top-nav li.active {
+    border-color: #ddb321;
+}
+.carousel-top .carousel-top-nav li {
+    position: relative;
+    color: red;
+    display: inline-block;
+    width: 5.5rem;
+    height: 4rem;
+    border-bottom: 2px solid;
+    border-color: #fff;
+    margin-right: 1rem;
+    cursor: pointer;
+    -webkit-transition: all 500ms cubic-bezier(0,0,.58,1);
+    -moz-transition: all 500ms cubic-bezier(0,0,.58,1);
+    -ms-transition: all 500ms cubic-bezier(0,0,.58,1);
+    -o-transition: all 500ms cubic-bezier(0,0,.58,1);
+}
+.arrowdown {
+	position: absolute;
+	left: 50%;
+	width: 100px;
+	margin-left: -50px;
+	bottom: 0px;
+	z-index: 20;
+	color: #ddb321;
+	cursor: pointer;
+}
+.arrowdown:hover {
+	animation: updown ease 500ms infinite;
+}
+.home-top {
+    position: relative;
+    height: 60rem;
+    overflow: visible;
+    background-size: cover;
+    background-position: center center;
+}
+.relative {
+    position: relative;
+}
+.home-top a.ttl {
+    color: #000;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    padding-left: calc(8.3% + 3rem);
+    padding-top: 8rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.home-top h2 {
+    font-family: 'Roboto-Black',notozh_title,notojp_title;
+    font-weight: 300;
+    font-size: 4.6rem;
+    text-transform: uppercase;
+    position: relative;
+}
+.home-top h2 .sub, .home-top h2 .sub:after {
+    -webkit-transition: all 300ms cubic-bezier(.455,.03,.515,.955);
+    -moz-transition: all 300ms cubic-bezier(.455,.03,.515,.955);
+    -ms-transition: all 300ms cubic-bezier(.455,.03,.515,.955);
+    -o-transition: all 300ms cubic-bezier(.455,.03,.515,.955);
+}
+.home-top h2 .sub {
+    overflow: hidden;
+}
+.home-top .lanciosub {
+    background-color: #000;
+    font-family: 'Roboto-Thin',notozh_title,notojp_title;
+    font-style: italic;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 3.8rem;
+    display: inline-block;
+    padding: 1rem;
+    position: relative;
+    white-space: pre;
+}
+h3.carouseltitle {
+    font-family: 'Roboto-Black',notozh_title,notojp_title;
+    font-size: 4rem;
+    color: #000;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    padding-bottom: 2.2rem;
+    margin: 6rem 0 0;
+    text-transform: uppercase;
+}
+h3.carouseltitle:after {
+    content: '';
+    position: absolute;
+    width: 15rem;
+    height: .5rem;
+    background: #000;
+    bottom: 0;
+    left: 50%;
+    margin-left: -7.5rem;
+}
+.carousel-news p {
+	font-family: 'Roboto-Light';
+	font-size: 18px;
+	padding: 30px 0px;
+	text-transform: uppercase;
+}
+.inf {
+	color: #ddb321;
+	font-size: 1.6rem;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+	font-family: 'Roboto-Light';
+	font-weight: bold;
+	text-transform: uppercase;
+}
+#lamborghini-news {
+	position: relative;
+}
+#lamborghini-news .col-sm-6 {
+    background-color: #efefea;
+    padding: 2rem 3.6rem;
+    height: 27rem;
+}
+#lamborghini-news .col-sm-6.first {
+	background-image: url('../img/Spa Francorchamps.jpg');
+	background-position: center;
+	background-color: #000;
+	background-size: cover;
+}
+#lamborghini-news .col-sm-6.first p {
+	color: #ddb321;
+	font-size: 24px;
+	font-family: 'Roboto-Light';
+	text-transform: uppercase;
+}
+#lamborghini-news .col-sm-6.second a:hover {
+	text-decoration: none;
+}
+.abstract {
+	font-family: 'Roboto-Light';
+	font-size: 1.6rem;
+    line-height: 3rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+#lamborghini-news .col-sm-6.second h4 {
+    color: #000;
+    font-size: 2.4rem;
+    font-family: 'Roboto-Black';
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+#lamborghini-news .col-sm-6.second div.row.bottom {
+	position: absolute;
+	bottom: 20px;
+	width: calc(100% - 3.6rem);
+}
+#lamborghini-news .col-sm-6.second div.row.bottom div span {
+	font-family: 'Roboto-Light';
+	font-size: 20px;
+	text-transform: uppercase;
+}
+#lamborghini-news .col-sm-6.second div.row.bottom div.left {
+	text-align: left;
+}
+#lamborghini-news .col-sm-6.second div.row.bottom div.right {
+	text-align: right;
+}
+#lamborghini-news .col-sm-4, .gallery .right, footer {
+	background-size: cover;
+	background-position: center;
+}
+.darkbox {
+	background-color: rgba(0,0,0,0.75);
+	margin: 0px -15px;
+	padding: 10px 20px;
+	transition: all ease 700ms;
+	height: 100%;
+	cursor: pointer;
+}
+.darkbox:hover {
+	background-color: transparent;
+}
+#lamborghini-news .col-sm-4.first {
+	background-image: url('../img/Spa-Francorchamps_thumb.jpg');
+}
+#lamborghini-news .col-sm-4.second {
+	background-image: url('../img/Spa-24h_thumb.jpg');
+}
+#lamborghini-news .col-sm-4.third {
+	background-image: url('../img/Road-America_thumb.jpg');
+}
+.label-text {
+	font-family: 'Roboto-Light';
+	font-size: 1.6rem;
+    line-height: 3rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+.gallery {
+	padding: 0px;
+}
+.gallery > div {
+	position: relative;
+}
+.gallery h6 {
+    background-color: #ddb321;
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    margin: 0;
+    color: #fff;
+    font-size: 2.2rem;
+    font-family: 'Roboto-Black',notozh_title,notojp_title;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 700;
+    text-align: right;
+    padding: 0 1rem 0 0;
+    z-index: 1;
+    width: 100%;
+}
+.gallery .left div.col-sm-6 {
+	height: 168px;
+	background-size: cover;
+	background-position: center;
+}
+.gallery .left div.col-sm-6.o {
+	background-image: url('../img/thumb 1-huracan-performante.jpg');
+}
+.gallery .left div.col-sm-6.t {
+	background-image: url('../img/thumb 5-huracan-performante.jpg');
+}
+.gallery .left div.col-sm-6.th {
+	background-image: url('../img/thumb-forged-huracan-performante.jpg');
+}
+.gallery .left div.col-sm-6.f {
+	background-image: url('../img/avantador-coupe-est-3.jpg');
+}
+.gallery .left div.col-sm-6.fv {
+	background-image: url('../img/aventador-s-thumb 1.jpg');
+}
+.gallery .left div.col-sm-6.s {
+	background-image: url('../img/aventador-roadster-est-4.jpg');
+}
+.gallery .left div.col-sm-6.sv {
+	background-image: url('../img/aventador-S-video_thumb.jpg');
+}
+.gallery .left div.col-sm-6.e {
+	background-image: url('../img/Huracan_RWD_3.jpg');
+}
+.gallery .right {
+	background-image: url("../img/img-gallery 1-huracan-performante.jpg");
+	/*background-image: url("https://www.lamborghini.com/en-en/sites/en-en/files/DAM/lamborghini/model/huracan/huracan-performante/gallery/img-gallery%201-huracan-performante.jpg");*/
+	height: 672px;
+}
+.gallery .right .play {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	background-color: rgba(0,0,0,0.75);
+	height: 100px;
+	width: 100px;
+	text-align: center;
+	border-radius: 100%;
+	color: #fff;
+	padding-top: 15px;
+	cursor: pointer;
+}
+.btn-lm {
+    bottom: 2rem;
+    background-color: #dfb400;
+    padding: 1rem 2rem 1rem 2rem;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    font-weight: lighter;
+    font-weight: normal;
+    font-family: 'Roboto-Light', notozh_title, notojp_title;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    color: #fff;
+    border-radius: 0px;
+    left: 50%;
+    width: 150px;
+    margin-left: -75px;
+    bottom: 80px;
+    cursor: pointer;
+}
+#social-stripe {
+    height: 24.3rem;
+    background-color: #eee;
+    background-size: cover;
+    background-position: center bottom;
+    background-image: url('../img/bg-social-stripe.jpg');
+    display: table;
+    width: 100%;
+    position: relative;
+    z-index: 5;
+}
+#social-stripe h4 {
+    font-family: 'Roboto-Black';
+    font-size: 3rem;
+    color: #000;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    padding-bottom: 2.2rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+#social-stripe ul {
+	display: inline;
+	list-style: none;
+	position: absolute;
+	width: 800px;
+	left: 50%;
+	margin-left: -400px;
+}
+#social-stripe ul li {
+	float: left;
+	width: 75px;
+	cursor: pointer;
+	color: #000;
+	transition: all ease 500ms;
+}
+#social-stripe ul li:hover {
+	color: #ddb321;
+}
+.image {
+    position: relative;
+    height: 43.5rem;
+    width: calc(100% + 6rem);
+    background-size: cover;
+    background-position: center center;
+    background-image:url('../img/bottom-squadracorse.jpg');
+}
+#dealers-stripe {
+    position: relative;
+    height: 44rem;
+    background-color: #000;
+    background-position: center bottom;
+    background-size: cover;
+    display: table;
+    width: 100%;
+}
+#dealers-stripe>div {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+#dealers-stripe h3 {
+    font-size: 4rem;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Roboto-Black',notozh_title,notojp_title;
+    margin: 0;
+}
+#dealers-stripe .fa {
+	color: #fff;
+}
+.btn-f {
+    bottom: 2rem;
+    background-color: #dfb400;
+    padding: 1rem 2rem 1rem 2rem;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    font-weight: lighter;
+    font-weight: normal;
+    font-family: 'Roboto-Light', notozh_title, notojp_title;
+    text-decoration: none;
+    overflow: hidden;
+    display: inline-block;
+    color: #fff;
+    border-radius: 0px;
+    width: 80px;
+    cursor: pointer;
+}
+.gallery2 {
+	width: 100%;
+}
+.gallery2 .o5 {
+	width: 20%;
+	height: 300px;
+	float: left;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+.gallery2 .o5 .pos {
+	position: absolute;
+	left: 10px;
+	bottom: 10px;
+}
+.gallery2 .o5:nth-child(1) {
+	background-image: url('../img/19933115_249858285503930_8071988164899635200_n.jpg');
+}
+.gallery2 .o5:nth-child(2) {
+	background-image: url('../img/19761870_335333290230996_5893281260003917824_n.jpg');
+}
+.gallery2 .o5:nth-child(3) {
+	background-image: url('../img/19624909_1860827684168448_8972548854461235200_n.jpg');
+}
+.gallery2 .o5:nth-child(4) {
+	background-image: url('../img/19624838_1868238516831010_1027710082508390400_n.jpg');
+}
+.gallery2 .o5:nth-child(5) {
+	background-image: url('../img/19622994_1726138457686985_4617118331718074368_n.jpg');
+}
+.gallery2 .o5:nth-child(6) {
+	background-image: url('../img/19367258_1383594248421938_2925599759165030400_n.jpg');
+}
+.gallery2 .o5:nth-child(7) {
+	background-image: url('../img/19534897_1514163775300573_8681457536169148416_n.jpg');
+}
+.gallery2 .o5:nth-child(8) {
+	background-image: url('../img/19428754_1885858971668496_1049012991447531520_n.jpg');
+}
+.gallery2 .o5:nth-child(9) {
+	background-image: url('../img/19424842_237827980041622_6077037295414804480_n.jpg');
+}
+.gallery2 .o5:nth-child(10) {
+	background-image: url('../img/19379177_1425078927583125_8930640084005289984_n.jpg');
+}
+.dark2 {
+	background-color: rgba(0,0,0,0.5);
+	/*margin: 0px -15px;*/
+	/*padding: 10px 20px;*/
+	transition: all ease 700ms;
+	height: 100%;
+	cursor: pointer;
+}
+.dark2:hover {
+	background-color: transparent;
+}
+footer {
+	padding: 30px 0px;
+	background-image: url('../img/bg-footer.jpg');
+}
+footer nav.up {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+footer nav ul {
+    list-style: none;
+}
+footer nav.up ul {
+    display: inline-block;
+}
+footer nav.up ul li {
+    display: inline-block;
+}
+footer nav.up ul li a {
+    font-family: 'Roboto-Light', notozh_title, notojp_title;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    text-decoration: none;
+    padding: 0 1rem;
+    -webkit-transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -moz-transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -ms-transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -o-transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    color: #fff;
+    font-weight: bold;
+}
+footer .links a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    display: block;
+}
+footer .links h4 {
+    font-family: 'Roboto-Regular', notozh_title, notojp_title;
+    font-size: 2rem;
+    font-weight: normal;
+    border-bottom: 1px solid white;
+    padding: 1rem 0;
+    font-weight: lighter;
+    margin-bottom: 1rem;
+    text-transform: none;
+}
+.links nav ul {
+    /*margin-left: -40px;*/
+    -webkit-padding-start: 0px;
+	display: inline-block;
+}
+footer .links nav ul li {
+    display: block;
+    text-align: left;
+}
+footer .links nav ul li a {
+    color: #e5e5e5;
+    font-family: 'Roboto-Light', notozh_title, notojp_title;
+    font-weight: 300;
+    font-size: 1.4rem;
+    padding: .8rem 0;
+    display: inline-block;
+    text-transform: none;
+}
+.footer-label {
+    font-family: 'Roboto-Regular', notozh_title, notojp_title;
+    color: #fff;
+    text-align: right;
+}
+.follow ul {
+	display: inline;
+	list-style: none;
+	position: absolute;
+	width: 650px;
+	left: 50%;
+	margin-left: -325px;
+}
+.follow ul li {
+	float: left;
+	width: 50px;
+	cursor: pointer;
+	color: #fff;
+	transition: all ease 500ms;
+}
+.follow ul li:hover {
+	color: #808080;
+}
+.follow .display-inline {
+	display: inline;
+	float: left;
+}
+.follow .display-inline.left {
+	margin-left: 200px;
+}
+footer .labels p {
+    font-size: 1.4rem;
+    font-family: 'Roboto-Light', notozh_title, notojp_title;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 2rem;
+}
+::selection {
+    background: #ddb321;
+    color: white;
+}
+@keyframes updown {
+	0% {
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(10px);
+	}
+}
