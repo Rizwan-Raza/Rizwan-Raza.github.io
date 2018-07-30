@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+*
+{
+	margin:0px;
+	padding:0px;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    background-color: #b0e0e6;
+}
+			div#frame
+			{
+				opacity:0.7;
+				filter:alpha(opacity=70);
+				background-color:#59CAD3;
+				position:absolute;
+				top:30px;
+				z-index:100;
+				width:100%;
+				height:56px;
+			}
+			div#img
+			{
+				position:absolute;
+				top: -22px;
+				background-color:#ccc;
+				border:3px #fff solid;
+				border-radius:5px;
+				height:100px;
+				width:100px;
+			}
+			header#title-bar
+			{
+				position:absolute;
+				top:30px;
+				z-index:100;
+				width:100%;
+				height:56px;
+				color:red;
+				font-size:40px;
+				font-family:'Segoe UI Light','Segoe UI',Arial,sans-serif;
+			}
+
+
+</style>
+		<link rel="stylesheet" type="text/css" href="engine0/style.css" />
+		<script type="text/javascript" src="engine0/jquery.js"></script>
+</head>
+<body>
+		<div id="wowslider-container0">
+			<div class="ws_images">
+				<ul>
+					<li>
+						<img src="data0/images/chrysanthemum.jpg" alt="Chrysanthemum" title="Chrysanthemum" id="wows0_0"/>
+					</li>
+					<li>
+						<img src="data0/images/desert.jpg" alt="Desert" title="Desert" id="wows0_1"/>
+					</li>
+					<li>
+						<img src="data0/images/hydrangeas.jpg" alt="Hydrangeas" title="Hydrangeas" id="wows0_2"/>
+					</li>
+					<li>
+						<img src="data0/images/jellyfish.jpg" alt="Jellyfish" title="Jellyfish" id="wows0_3"/>
+					</li>
+					<li>
+						<img src="data0/images/koala.jpg" alt="Koala" title="Koala" id="wows0_4"/>
+					</li>
+					<li>
+						<img src="data0/images/lighthouse.jpg" alt="Lighthouse" title="Lighthouse" id="wows0_5"/>
+					</li>
+					<li>
+						<img src="data0/images/penguins.jpg" alt="css slider" title="Penguins" id="wows0_6"/>
+					</li>
+					<li>
+						<img src="data0/images/tulips.jpg" alt="Tulips" title="Tulips" id="wows0_7"/>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="engine0/wowslider.js"></script>
+		<script type="text/javascript" src="engine0/script.js"></script>
+		<div id="frame"></div>
+		<header class="center" id="title-bar">
+			<img src="images/proLog.png">
+			<div id="img"></div>
+			<div id="title" class="container">
+				proLog Academy
+			</div>
+  			<!--<p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p>
+  			<p>'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'</p>-->
+		</header>
+
+		<p><b>Note: </b>Using margin:auto will not work in IE8, unless a !DOCTYPE is declared.</p>
+
+</body>
+</html>

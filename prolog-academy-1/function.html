@@ -1,0 +1,65 @@
+<!DOCTYPE="html5">
+<html>
+	<head>
+		<title>
+			Hello World
+		</title>
+		<style>
+			#output
+			{
+				position:absolute;
+				height:300px;
+				width: 300px;
+				background-color:rgb(255,0,0);
+				border:1px solid blacks;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="output" onclick="change()"></div>
+
+		<script type="text/javascript">
+			var t=Date.now();
+
+		function change()
+		{
+			/*Random Colors*/
+			var red=Math.random(red);
+			red*=256;
+			red=Math.floor(red);
+			var green=Math.random(green);
+			green*=256;
+			green=Math.floor(green);
+			var blue=Math.random(blue);
+			blue*=256;
+			blue=Math.floor(blue);
+
+			/*Random Positioning*/
+			var left=Math.random(left);
+			left*=1000;
+			left=Math.floor(left);
+			var top=Math.random(top);
+			top*=500;
+			top=Math.floor(top);
+
+			/*Random Radius*/
+			var rad=Math.random(rad);
+			rad*=200;
+			rad=Math.floor(rad);
+
+			var t2=Date.now();
+			var t3=t2-t;
+			alert("The time taken to click is "+t3/1000+" seconds");
+			document.getElementById("output").style.left=left;
+			document.getElementById("output").style.top=top;
+			document.getElementById("output").style.border="1px solid rgb("+green+","+blue+","+red+")";
+			document.getElementById("output").style.backgroundColor="rgb("+red+","+green+","+blue+")";
+			document.getElementById("output").style.borderRadius=rad+"px";
+			t=Date.now();
+
+		}
+		</script>
+
+	</body>
+</html>
