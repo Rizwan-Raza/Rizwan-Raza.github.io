@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Welcome to Bubble Trouble
+		</title>
+		<style type="text/css">
+		section#area
+		{
+			position: absolute;
+			border:2px solid black;
+			/*cursor:url('Link Select.cur'),url(pen_l.cur),auto;*/
+			cursor:url(brush.png),url(pen_l.cur),auto;
+			top: 25px;
+			left: 4px;
+		}
+		.t10
+		{
+			cursor: url(c10.gif);
+		}
+		.s16
+		{
+			cursor: url(c16.gif);
+		}
+		.t24
+		{
+			cursor: url(c24.gif);
+		}
+		.t32
+		{
+			cursor: url(c32.gif);
+		}
+		li
+		{
+			display: inline;
+			width:20px;
+			height: 20px;
+			border:1px solid black;
+			position: absolute;
+		}
+		li:hover
+		{
+			cursor: pointer;
+		}
+		li#red
+		{
+			top:0px;
+			left:0px;
+			background-color: red;
+		}
+		li#yellow
+		{
+			top:0px;
+			left:20px;
+			background-color: yellow;
+		}
+		li#blue
+		{
+			top:0px;
+			left:40px;
+			background-color: blue;
+		}
+		li#green
+		{
+			top:0px;
+			left:60px;
+			background-color: green;
+		}
+		li#black
+		{
+			top:0px;
+			left:80px;
+			background-color: black;
+		}
+		li#white
+		{
+			top:0px;
+			left:100px;
+			background-color: white;
+		}
+		li#orange
+		{
+			top:0px;
+			left:120px;
+			background-color: orange;
+		}
+		li#purple
+		{
+			top:0px;
+			left:140px;
+			background-color: purple;
+		}
+		li#pink
+		{
+			top:0px;
+			left:160px;
+			background-color: pink;
+		}
+		li#gray
+		{
+			top:0px;
+			left:180px;
+			background-color: gray;
+		}
+		li#olive
+		{
+			top:0px;
+			left:200px;
+			background-color: olive;
+		}
+		li#brown
+		{
+			top:0px;
+			left:220px;
+			background-color: brown;
+		}
+		li#aqua
+		{
+			top:0px;
+			left:240px;
+			background-color: aqua;
+		}
+		ul#tools
+		{
+			position: absolute;
+			left:550px;
+			top:-16px;
+		}
+		li#pencil
+		{
+			top:0px;
+			left:0px;
+		}
+		li#brush
+		{
+			top:0px;
+			left:20px;
+		}
+		li#rect
+		{
+			top:0px;
+			left:40px;
+		}
+		li#elipse
+		{
+			top:0px;
+			left:60px;
+		}
+		li#eraser
+		{
+			top:0px;
+			left:80px;
+		}		
+		li#shadow
+		{
+			top:0px;
+			left:100px;
+		}		
+		ul#size
+		{
+			position: absolute;
+			left:280px;
+			top:-12px;
+		}
+		ul#size>li
+		{
+			position: relative;
+			padding-left: 20px;
+			padding-top: 3px; 
+			top: 0px;
+			left:0px;
+		}
+		ul#size>li>div
+		{
+			background-color: black;
+			position: absolute;
+			top:50%;
+			left:50%;
+		}
+		li#xxx_small>div
+		{
+			width: 1px;
+			height: 1px;
+			border:9px solid gray;
+			border-width: 9px 10px 10px 9px;
+			margin-left: -10px;
+			margin-top: -10px;
+		}
+		li#xx_small>div
+		{
+			width: 2px;
+			height: 2px;
+			border:9px solid gray;
+			margin-left: -10px;
+			margin-top: -10px;
+		}
+		li#x_small>div
+		{
+			width: 3px;
+			height: 3px;
+			border:8px solid gray;
+			border-width: 8px 9px 9px 8px;
+			margin-left: -10px;
+			margin-top: -10px;
+		}
+		li#small>div
+		{
+			width: 4px;
+			height: 4px;
+			border:8px solid gray;
+			margin-left: -10px;
+			margin-top: -10px;
+		}
+		li#normal>div
+		{
+			width: 5px;
+			height: 5px;
+			border:7px solid gray;
+			border-width: 7px 8px 8px 7px;
+			margin-left: -10px;
+			margin-top: -10px;
+		}
+		li#x_large>div
+		{
+			width: 6px;
+			height: 6px;
+			border:7px solid gray;
+			margin-left: -10px;
+			margin-top: -10px;
+		}
+		li#xx_large>div
+		{
+			width: 7px;
+			height: 7px;
+			border:6px solid gray;
+			border-width: 6px 7px 7px 6px;
+			margin-left: -10px;
+			margin-top: -10px;
+		}
+		li#xxx_large>div
+		{
+			width: 8px;
+			height: 8px;
+			border:6px solid gray;
+			margin-left: -10px;
+			margin-top: -10px;
+		}
+		</style>
+		<script type="text/javascript" src="jquery-min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){ 
+			var area=$('#area'),color="black",size=2,tools='p';
+			var scr_h=$(document).height(),scr_w=$(document).width();
+			area.resize(function(){
+				var scr_h=$(document).height();
+				var scr_w=$(document).width();
+			});
+			var h=scr_h-32,w=scr_w-12;
+			area.height(h);
+			area.width(w);
+			var x=-100,y=-100,dot;
+			$('ul#colors>li').click(function(){
+				color=this.id;
+			});
+			$('div').click(function(){
+				size=$(this).width();
+			});
+			$('ul#tools>li').click(function(){
+				tools=this.id[0];
+				if(tools=='p')
+				{
+					document.getElementById("area").style.cursor = "url('http://wiki-devel.sugarlabs.org/images/e/e2/Arrow.cur'), auto";
+				}
+				else if(tools=='b')
+				{
+					document.body.style.cursor="url(brush.png) !important";
+				}
+			});
+			$(document).keydown(function(event){
+					//alert(event.which);
+					if(event.which==187)
+					{
+						size+=2;
+					}
+					else if(event.which==189)
+					{
+						size-=2;
+					}
+				if(size<16)
+					$('#area').addClass("t10");
+				else if(size<24)
+					$('#area').addClass("s16");
+				else if(size<32)
+					$('#area').addClass("t24");
+				else 
+					$('#area').addClass("t32");
+			});
+    		area.mousedown(function(){
+				var xx,yy,xxx,yyy;
+  				xxx=event.pageX;
+    			yyy=event.pageY;    			
+    			dot=setInterval(function(){
+    				if(tools=='p')
+    				{
+    					area.append("<div style='position:absolute;top:"+(y-size/2-24)+"px;left:"+(x-size/2-4)+"px;width:"+size+"px;height:"+size+"px;background-color:"+color+";' class='pencil'></div>");
+    				}
+    				else if(tools=='b')
+    				{
+    					area.append("<div style='position:absolute;top:"+(y-size/2-24)+"px;left:"+(x-size/2-4)+"px;width:"+size+"px;height:"+size+"px;background-color:"+color+";border-radius:"+size/2+"px'></div>");
+    				}
+    				else if(tools=='e')
+    				{
+    					area.append("<div style='position:absolute;top:"+(y-size/2-24)+"px;left:"+(x-size/2-4)+"px;width:"+size+"px;height:"+size+"px;background-color:white;' class='pencil'></div>");
+    				}
+    				else if(tools=='s')
+    				{
+    					area.append("<div style='position:absolute;top:"+(y-size/2-24)+"px;left:"+(x-size/2-4)+"px;width:"+size+"px;height:"+size+"px;border-radius:"+size/2+"px;background-color:"+color+";box-shadow:0px 0px "+size+"px "+color+"'></div>");    					
+    				}
+    				else if(tools=='r')
+    				{
+    					xx=x-xxx;
+    					yy=y-yyy;
+    					area.append("<div style='position:absolute;top:"+(yyy-24)+"px;left:"+(xxx-4)+"px;width:"+xx+"px;height:"+yy+"px;border:1px solid "+color+";background-color:"+color+"'></div>");
+    				}
+    				area.mousemove(function(event){
+    					x=event.pageX;
+    					y=event.pageY;
+    				});
+    			},1);
+    		},clearInterval(dot));
+    		area.mouseup(function(){
+    			clearInterval(dot);
+    		});
+		});
+		</script>
+	</head>
+
+	<body>
+		<nav>
+			<ul id="colors">
+				<li id="red"></li>
+				<li id="yellow"></li>
+				<li id="blue"></li>
+				<li id="green"></li>
+				<li id="black"></li>
+				<li id="white"></li>
+				<li id="orange"></li>
+				<li id="purple"></li>
+				<li id="pink"></li>
+				<li id="gray"></li>
+				<li id="olive"></li>
+				<li id="brown"></li>
+				<li id="aqua"></li>
+			</ul>
+			<ul id="size">
+				<li id="xxx_small"><div></div></li>
+				<li id="xx_small"><div></div></li>
+				<li id="x_small"><div></div></li>
+				<li id="small"><div></div></li>
+				<li id="normal"><div></div></li>
+				<li id="x_large"><div></div></li>
+				<li id="xx_large"><div></div></li>
+				<li id="xxx_large"><div></div></li>
+			</ul>
+			<ul id="tools">
+				<li id="pencil" onclick="document.getElementById('area').style.cursor='nwse-resize'">Pe</li>
+				<li id="brush" onclick="document.getElementById('area').style.cursor='pointer'">Br</li>
+				<li id="rect" onclick="document.getElementById('area').style.cursor='crosshair'">Re</li>
+				<li id="elipse">Ci</li>
+				<li id="eraser" onclick="document.getElementById('area').style.cursor='hand'">Er</li>
+				<li id="shadow" onclick="document.getElementById('area').style.cursor='cell'">Sb</li>
+			</ul>
+		</nav>
+		<section id="area">
+		</section>
+	</body>
+</html>
