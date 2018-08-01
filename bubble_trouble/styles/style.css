@@ -1,0 +1,150 @@
+body
+{
+	font-weight: bold;
+	background-color: #B8E9FF;
+	margin:0px;
+	padding:0px;
+}
+nav
+{
+	float: left;
+	width:33.33%;
+	margin:5px 0px;
+}
+aside
+{
+	width:100%;
+	text-align: center;
+	margin:0.5px 0px;
+	font-size:20px;
+	color:black;
+	background-color:#aaa;
+	float:left;
+}
+nav#one
+{
+	width:100%;
+}
+nav#two
+{
+	width:50%;
+}
+section
+{
+	position: absolute;
+	left: 50%;
+	margin-left:-600px;
+	top:120px;
+}
+div
+{
+	height: 190px;
+	width: 190px;
+	visibility: hidden;
+	position: absolute;
+	z-index: 1;
+}
+#div0
+{
+	top:0px;
+	left:0px;
+}
+#div1
+{
+	top:0px;
+	left:200px;
+}
+#div2
+{
+	top:0px;
+	left:400px;
+}
+#div3
+{
+	top:0px;
+	left:600px;
+}
+#div4
+{
+	top:0px;
+	left:800px;
+}
+#div5
+{
+	top:0px;
+	left:1000px;
+}
+#div6
+{
+	top:200px;
+	left:0px;
+}
+#div7
+{
+	top:200px;
+	left:200px;
+}
+#div8
+{
+	top:200px;
+	left:400px;
+}
+#div9
+{
+	top:200px;
+	left:600px;
+}
+#div10
+{
+	top:200px;
+	left:800px;
+}
+#div11
+{
+	top:200px;
+	left:1000px;
+}
+#div12
+{
+	top:400px;
+	left:0px;
+}
+#div13
+{
+	top:400px;
+	left:200px;
+}
+#div14
+{
+	top:400px;
+	left:400px;
+}
+#div15
+{
+	top:400px;
+	left:600px;
+}
+#div16
+{
+	top:400px;
+	left:800px;
+}
+#div17
+{
+	top:400px;
+	left:1000px;
+}
+button
+{
+	width:100px;
+	height: 24px;
+	font-size: 16px;
+	font-weight: bold;
+	background-color: orange;
+	border-radius: 10px;
+}
+button:hover
+{
+	background-color: #ff7700;
+	cursor: pointer;
+}

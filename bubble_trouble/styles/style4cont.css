@@ -1,0 +1,85 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+}
+body
+{
+	font-family: sans-serif;
+	font-weight: bold;
+	background-color: #43609C;
+}
+#menu,
+.handa
+{
+	position: absolute;
+	top:20%;
+	left:50%;
+
+}
+.handa
+{
+	margin-left: -500px;
+}
+#menu
+{
+	margin-left: -150px;
+}
+h1
+{
+	padding: 10px;
+	margin: 20px 0px;
+	border-radius:10px;
+	color: orange;
+	background-color: #63409c;
+}
+hr
+{
+	width=500px;
+}
+div
+{
+	margin:10px 0px;
+	padding-top: 4px;
+	height: 40px;
+	font-size: 24px;
+	background-color: orange;
+	border-radius: 10px;
+}
+.handa>div
+{
+	width:1000px;
+}
+#menu>div
+{
+	width:300px;
+}
+#menu>div:hover
+{
+	background-color: #ff7700;
+	cursor: pointer;
+}
+#menu>div#quit
+{
+	padding-top: 8px;
+	height: 36px;
+}
+div#study
+{
+	height: 60px;
+}
+a
+{
+	position: relative;
+	top:5px;
+	padding:10px 120px;
+	color: black;
+	text-decoration: none;
+}
+a.nrml
+{
+	padding: 0px;
+	position: relative;
+	top:0px;
+	color:blue;
+}
