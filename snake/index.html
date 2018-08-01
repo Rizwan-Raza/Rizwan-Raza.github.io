@@ -1,0 +1,392 @@
+<html>
+
+	<head>
+		<title>
+			Gotta Catch &Eacute;m All!
+		</title>
+		<link rel="icon" href="images\favicon.ico" type="image/x-icon"/>
+		<link rel="shortcut icon" href="images\favicon.ico" type="image/x-icon"/>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<style>
+			body
+			{
+				background-color: #55ff00;
+			}
+			#player
+			{
+				background-color:red;
+				border-radius: 25px 25px 0px 0px;
+				border:1px solid black;
+				position: absolute;
+				/*background: url('images/snake/U_Layer.png');*/
+				/*background-repeat: no-repeat !important;*/
+				width: 50px;
+				height: 50px;
+			}
+			#pickup
+			{
+				/*background-color: yellow;*/
+				/*border:1px solid black;*/
+				background: url('images/fruits/apple.png');
+				position: absolute;
+				width: 32px;
+				height: 32px;
+				visibility: hidden;
+			}
+			button
+			{
+				background-color: orange;
+				border-radius: 50px;
+				border: none;
+				text-shadow:1px 1px 1px black;
+				font-weight: bold;
+				width: 100px;
+				height: 100px;
+				border:2px outset white;
+				box-shadow: 3px 3px silver;
+			}
+			button:hover
+			{
+				background-color: purple;
+				color: white;
+				box-shadow: 3px 3px black;
+			}
+			#pause
+			{
+				position: absolute;
+			}
+			aside
+			{
+				background-color: blue;
+				position: absolute;
+			}
+			p
+			{
+				width: 120px;
+				height: 30px;
+				background-color: gray;
+				border: 5px solid white;
+				border-radius: 10px;
+				font-family: sans-serif;
+				font-weight: bold;
+				font-size: 24px;
+				margin:20px 10px;
+				padding:10px 20px;
+				box-shadow: 3px 3px 3px black;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<aside id="wall-up"></aside>
+			<aside id="wall-down"></aside>
+			<aside id="wall-left"></aside>
+			<aside id="wall-right"></aside>
+		</header>
+		<div id="player"></div>
+		<div id="pickup"><img id="pu-im"></div>
+		<p>Score:&nbsp;<span id="score">0</span> <button id="pause">Pause</button></p>
+	</body>
+	<script type="text/javascript">
+		var scr_w=$(document).width(),scr_h=$(document).height();
+		var pos_top=scr_h/2-24,pos_left=scr_w/2-32,motion,t,l,count=0;
+		$(document).ready(function() {
+			drawstage();
+			drawpickup();
+			$('#pause').click(function quit(){
+				var answer=confirm('Paused!!!\nWant to Resume???');
+				if(!answer)
+				{
+					var exit=confirm('Are You Sure Want to exit???');
+					if(exit)
+					{
+						window.location.assign("index.html");
+					}
+					else
+					{
+						quit();
+					}
+				}
+			});			
+			$(document).keydown(function(event){
+				//alert(event.which);
+				switch(event.which)
+				{
+					case 38:
+						move_up();
+						// $('#player,#player2').css("background","url('images/snake/U.gif')");
+						$('#player,#player2').css("border-radius","25px 25px 0px 0px");
+						break;
+					case 40:
+						move_down();
+						// $('#player,#player2').css("background","url('images/snake/D.gif')");
+						$('#player,#player2').css("border-radius","0px 0px 25px 25px");
+						break;
+					case 37:
+						move_left();
+						// $('#player,#player2').css("background","url('images/snake/L.gif')");
+						$('#player,#player2').css("border-radius","25px 0px 0px 25px");
+						break;
+					case 39:
+						move_right();
+						// $('#player,#player2').css("background","url('images/snake/R.gif')");
+						$('#player,#player2').css("border-radius","0px 25px 25px 0px");
+						break;
+					case 87:
+						upping();
+						// $('#player').css("background","url('images/snake/U.gif')");
+						$('#player,#player2').css("border-radius","25px 25px 0px 0px");
+						break;
+					case 83:
+						downing();
+						// $('#player').css("background","url('images/snake/D.gif')")
+						$('#player,#player2').css("border-radius","0px 0px 25px 25px");
+						break;
+					case 65:
+						lefting();
+						// $('#player').css("background","url('images/snake/L.gif')")
+						$('#player,#player2').css("border-radius","25px 0px 0px 25px");
+						break;
+					case 68:
+						righting ();
+						// $('#player').css("background","url('images/snake/R.gif')")
+						$('#player,#player2').css("border-radius","0px 25px 25px 0px");
+						break;
+					case 19:
+					case 32:
+					case 13:
+						pausing();
+						break;
+					default:
+						//alert("Pressed wrong key");
+				}
+			});
+		});
+		function move_up()
+		{
+			clearInterval(motion);
+			upping();			
+		}
+		function move_down()
+		{
+			clearInterval(motion);
+			downing();			
+		}
+		function move_left()
+		{
+			clearInterval(motion);
+			lefting();			
+		}
+		function move_right()
+		{
+			clearInterval(motion);
+			righting();			
+		}
+		function upping()
+		{
+			motion=setInterval(function(){up()},5)			
+		}
+		function downing()
+		{
+			motion=setInterval(function(){down()},5)			
+		}
+		function lefting()
+		{
+			motion=setInterval(function(){left()},5)			
+		}
+		function righting()
+		{
+			motion=setInterval(function(){right()},5)			
+		}
+		function drawstage()
+		{
+			document.getElementById("wall-up").style.width=scr_w;
+			document.getElementById("wall-up").style.height=10;
+			document.getElementById("wall-up").style.top=0;
+			document.getElementById("wall-up").style.left=0;
+
+			document.getElementById("wall-down").style.width=scr_w;
+			document.getElementById("wall-down").style.height=10;
+			document.getElementById("wall-down").style.top=scr_h-10;
+			document.getElementById("wall-down").style.left=0;
+
+			document.getElementById("wall-left").style.width=10;
+			document.getElementById("wall-left").style.height=scr_h;
+			document.getElementById("wall-left").style.top=0;
+			document.getElementById("wall-left").style.left=0;
+
+			document.getElementById("wall-right").style.width=10;
+			document.getElementById("wall-right").style.height=scr_h;
+			document.getElementById("wall-right").style.top=0;
+			document.getElementById("wall-right").style.left=scr_w-10;
+
+			document.getElementById("pause").style.left=scr_w-140;
+			document.getElementById("player").style.left=scr_w/2-32;
+			document.getElementById("player").style.top=scr_h/2-24;
+		}
+		function up()
+		{
+			pos_top-=1;
+			checkforout();
+			pickingup();
+			document.getElementById('player').style.top=pos_top;
+		}
+		function down()
+		{
+			pos_top+=1;
+			checkforout();
+			pickingup();
+			document.getElementById('player').style.top=pos_top;
+		}
+		function left()
+		{
+			pos_left-=1;
+			checkforout();
+			pickingup();
+			document.getElementById('player').style.left=pos_left;
+		}
+		function right()
+		{
+			pos_left+=1;
+			checkforout();
+			pickingup();
+			document.getElementById('player').style.left=pos_left;
+		}
+		function checkforout()
+		{
+			if(pos_left>=scr_w-$('#player').width()-10||pos_left<=10||pos_top>=scr_h-$('#player').height()-10||pos_top<=10)
+			{
+				clearInterval(motion);
+				$('#player').css("background-color","#000000");
+				setTimeout(function() {lose()},1000)
+			}
+			if(pos_top<140&&pos_left>scr_w-180)
+			{
+				clearInterval(motion);
+				pausing();
+			}
+		}
+		function pausing()
+		{
+			var answer=confirm('Paused!!!\nWant to Resume???');
+			if(!answer)
+			{
+				var exit=confirm('Are You Sure Want to exit???');
+				if(exit)
+				{
+					window.location.assign("index.html");
+				}
+				else
+				{
+					pausing();
+				}
+			}				
+		}
+		function pickingup()
+		{
+			if(((pos_left>=l&&pos_left<=l+50)&&(pos_top>=t&&pos_top<=t+50))||((pos_left+50>=l&&pos_left+50<=l+50)&&(pos_top+50>=t&&pos_top+50<=t+50))||((pos_left+50>=l&&pos_left+50<=l+50)&&(pos_top>=t&&pos_top<=t+50))||((pos_left>=l&&pos_left<=l+50)&&(pos_top+50>=t&&pos_top+50<=t+50)))
+			{
+				document.getElementById('pickup').style.visibility="hidden";
+				drawpickup();
+				count++;
+				document.getElementById('score').innerHTML=count;
+			}			
+		}
+		function drawpickup()
+		{
+			var h=scr_h-$('#pickup').height()-10;
+			var w=scr_w-$('#pickup').width()-10;
+			getRandomPosition(h,w);
+			document.getElementById('pickup').style.top=t;
+			document.getElementById('pickup').style.left=l;
+			switch(Math.floor(Math.random()*6))
+			{
+			case 0:
+				$('#pickup').css("background","url('images/fruits/apple.png')");
+				break;
+			case 1:
+				$('#pickup').css("background","url('images/fruits/banana.png')");
+				break;
+			case 2:
+				$('#pickup').css("background","url('images/fruits/cherry.png')");
+				break;
+			case 3:
+				$('#pickup').css("background","url('images/fruits/pear.png')");
+				break;
+			case 4:
+				$('#pickup').css("background","url('images/fruits/pineapple.png')");
+				break;
+			case 5:
+				$('#pickup').css("background","url('images/fruits/strawberry.png')");
+				break;
+			default:
+				$('#pickup').css("background","url('images/fruits/boulder.png')");
+			}
+			document.getElementById('pickup').style.visibility="visible";
+		}
+		function getRandomPosition(h,w)
+		{
+			t=Math.floor(Math.random()*h);
+			l=Math.floor(Math.random()*w);
+			if((t<=10||l<=10)||(t<=50&&l<200)||(t>pos_top&&t<pos_top+50&&l>pos_left&&l<pos_left+50)||(t+50>pos_top&&t+50<pos_top+50&&l>pos_left&&l<pos_left+50)||(t>pos_top&&t<pos_top+50&&l+50>pos_left&&l+50<pos_left+50)||(t<150&&l>scr_w-200))
+			{
+				//alert(t+" and "+l);
+				//alert("getRandomPosition");
+				getRandomPosition(h,w);
+			}
+			//alert(t+" and "+l);
+		}
+		function lose()
+		{
+			document.open();
+			document.writeln("<html>");
+			document.writeln("<head>");
+			document.writeln("<title>Loser!!!</title>");
+			document.writeln("<style>");
+			document.writeln("body{");
+			document.writeln("background-color:#43609c;");
+			document.writeln("font-family:sans-serif;}");
+			document.writeln("*{");
+			document.writeln("position:absolute;");
+			document.writeln("left:50%;");
+			document.writeln("text-align:center;}");
+			document.writeln("#one{");
+			document.writeln("top:130px;");
+			document.writeln("margin-left:-150px;");
+			document.writeln("width:300px;}");
+			document.writeln("#two{");
+			document.writeln("top:200px;");
+			document.writeln("margin-left:-150px;");
+			document.writeln("width:300px;}");
+			document.writeln("#three{");
+			document.writeln("top:250px;");
+			document.writeln("margin-left:-150px;");
+			document.writeln("width:300px;}");
+			document.writeln("hr{left:0px;width:100%}");
+			document.writeln("a{");
+			document.writeln("top:400px;");
+			document.writeln("font-size:24px;")
+			document.writeln("color:black;");
+			document.writeln("padding:20px;");
+			document.writeln("text-decoration:none;");
+			document.writeln("margin-left:-60px;");
+			document.writeln("background-color:orange;");
+			document.writeln("border-radius:10px;");
+			document.writeln("text-shadow:1px 1px 1px black;}");
+			document.writeln("a:hover{");
+			document.writeln("background-color:#ff6600}");
+			document.writeln("</style>");
+			document.writeln("</head>");
+			document.writeln("<body>");
+			document.writeln("<h1 id='one'>You Lose<hr></h1>");
+			document.writeln("<h2 id='two'>You get hit in the wall!!!<hr></h2>");
+			document.writeln("<h2 id='three'>Score: "+count+"<hr></h2>");
+			document.writeln("<a href='index.html'>Retry</a>");
+			document.writeln("</body>");
+			document.writeln("</html>");
+		}
+
+	</script>
+
+</html>
