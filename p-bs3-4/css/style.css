@@ -115,17 +115,6 @@ p {
   margin: 30px 10px;
   font-size: 16px;
 }
-.navbar-brand {
-  color: #fff !important;
-  font-family: 'TitilliumWeb-Bold';
-  font-size: 42px;
-}
-.navbar-brand:hover {
-  color: #ddd !important;
-}
-.navbar-brand span {
-  font-family: 'TitilliumWeb-Light'
-}
 header#home {
   padding: 200px 0px 96px 0px;
 }
@@ -391,8 +380,8 @@ footer#footer .nav-pills>li>a:focus {
   margin: 15px 10px !important;
 }
 .affix a.navbar-brand {
-  margin: 5px !important;
-  /*padding: 10px 15px;*/
+  margin: 0px !important;
+  padding: 10px 15px;
 }
 .seperator {
   height: 100px;
